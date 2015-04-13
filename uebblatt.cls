@@ -41,10 +41,10 @@
   Ingo Blechschmidt \\
   Sommersemester 2015 \\[0em]
 
-  \begin{center}\Large \textbf{Übungsblatt #1 zu Modellkategorien} \\[1em]
-  \normalsize #2
+  \begin{center}
+    \Large \textbf{Übungsblatt #1 zu Modellkategorien} \\[1em]
+    \normalsize #2
   \end{center}
-  \fi
   \vspace{\titleskip}}
 
 \renewcommand*\theenumi{\alph{enumi}}
@@ -57,7 +57,7 @@
 \newcounter{aufgabennummer}
 \newenvironment{aufgabe}[1]{
   \addtocounter{aufgabennummer}{1}
-  \textbf{\ifweihnachtsbonus Wunsch \else Aufgabe \fi \theaufgabennummer{}.} \emph{#1} \par
+  \textbf{Aufgabe \theaufgabennummer{}.} \emph{#1} \par
 }{\vspace{\aufgabenskip}}
 \newenvironment{aufgabeE}[1]{\begin{aufgabe}{#1}\begin{enumerate}}{\end{enumerate}\end{aufgabe}}
 
