@@ -81,6 +81,7 @@
 \newcommand{\E}{\mathcal{E}}
 \newcommand{\F}{\mathcal{F}}
 \newcommand{\G}{\mathcal{G}}
+\newcommand{\M}{\mathcal{M}}
 \renewcommand{\L}{\mathcal{L}}
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\U}{\mathcal{U}}
@@ -138,7 +139,7 @@
 \DeclareMathOperator{\sk}{sk}
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\Spec}{Spec}
-\DeclareMathOperator{\colim}{colim}
+\DeclareMathOperator*{\colim}{colim}
 \DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\Ann}{Ann}
 \DeclareMathOperator{\Int}{int}
