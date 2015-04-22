@@ -1,10 +1,5 @@
 \documentclass{uebblatt}
 \usepackage{stmaryrd}
-\usepackage{draftwatermark}
-
-\definecolor{pink}{rgb}{0.95,0.9,0.95}
-\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}
-\SetWatermarkScale{1}
 
 \begin{document}
 
@@ -18,6 +13,10 @@
 
 \begin{aufgabe}{Beispiele für Limiten}
 \begin{enumerate}
+\item Was ist das initiale Objekt in der Kategorie der Gruppen?
+\item \emph{Für die Fans von Optimierung unter euch.} Sei~$\C$ die zur
+Partialordnung aller konvexen Teilmengen des~$\RR^n$ gehörige Kategorie. Was
+sind Koprodukte in~$\C$?
 \item Zeige: In der Kategorie der~$k$-Vektorräume ist~$k[X]$ der Kolimes des
 Diagramms $\bigl(k[X]_{\leq0} \lhra k[X]_{\leq1} \lhra k[X]_{\leq2} \lhra
 \cdots \bigr)$. Dabei ist~$k[X]_{\leq n}$ der Unterraum der Polynome vom
@@ -53,32 +52,6 @@ und~$N$ ein Links-$R$-Modul. Zeige:
 \vspace{-1.5em}
 \end{aufgabe}
 
-\begin{aufgabe}{Die Limesformel für punktweise Kan-Erweiterungen}
-Sei~$K : \M \to \C$ ein Funktor. Sei~$T : \M \to \A$ ein Funktor derart, dass
-für alle Objekte~$c \in \C$ der Limes~$R(c) \defeq \lim_{f:K(m) \to c} T(m)$
-existiert.
-% Die Indexkategorie des Limes sieht also wie folgt aus:
-% Objekte der Indexkategorie sind Morphismen K(m) --> c, wobei m aus M beliebig
-% sein kann.
-% Morphismen zwischen K(m) --> c und K(m') --> c sind Morphismen g : m --> m'
-% derart, dass das Dreieck mit den Kanten K(g), K(m') --> c und K(m) --> c
-% kommutiert.
-\begin{enumerate}
-\item Erkläre, wie man diese Setzung zu einem Funktor~$R : \C \to \A$ ausdehnen
-kann.
-\item Beweise, dass~$R$ eine Rechts-Kan-Erweiterung von~$T$ längs~$K$ wird.
-\end{enumerate}
-\end{aufgabe}
-
-%\begin{aufgabe}{Vertauschbarkeit von filtrierten Kolimiten mit endlichen Limiten}
-%Sei~$F : \C \times \D \to \Set$ ein Funktor.
-%\begin{enumerate}
-%\item Konstruiere einen kanonischen Morphismus~$\lambda : \colim\limits_{c \in \C}
-%\lim\limits_{d \in D} F(c,d) \to \lim\limits_{d \in \D} \colim\limits_{c \in \C} F(c,d)$.
-%\item Sei~$\C$ sogar eine filtrierte Kategorie. Zeige, dass dann~$\lambda$ ein Isomorphismus ist.
-%\end{enumerate}
-%\end{aufgabe}
-
 \begin{aufgabe}{Das australische Ninja-Yoneda-Lemma}
 Sei~$F : \C^\op \to \Set$ eine Prägarbe. Beweise das australische
 Ninja-Yoneda-Lemma:
@@ -96,8 +69,36 @@ Ninja-Yoneda-Lemma:
 \vspace{-1em}
 \centering
 \href{https://topologicalmusings.wordpress.com/2009/02/14/happy-co-valentines-day/}{\includegraphics[height=3.3cm]{images/happy-co-valentine}}
+\
 \includegraphics[height=3.3cm]{images/homer-the-end}
+\
 \href{http://brownsharpie.courtneygibbons.org/?p=1253}{\includegraphics[height=3.3cm]{images/love-commute}}
 \par
 
 \end{document}
+
+\begin{aufgabe}{Vertauschbarkeit von filtrierten Kolimiten mit endlichen Limiten}
+Sei~$F : \C \times \D \to \Set$ ein Funktor.
+\begin{enumerate}
+\item Konstruiere einen kanonischen Morphismus~$\lambda : \colim\limits_{c \in \C}
+\lim\limits_{d \in D} F(c,d) \to \lim\limits_{d \in \D} \colim\limits_{c \in \C} F(c,d)$.
+\item Sei~$\C$ sogar eine filtrierte Kategorie. Zeige, dass dann~$\lambda$ ein Isomorphismus ist.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Die Limesformel für punktweise Kan-Erweiterungen}
+Sei~$K : \M \to \C$ ein Funktor. Sei~$T : \M \to \A$ ein Funktor derart, dass
+für alle Objekte~$c \in \C$ der Limes~$R(c) \defeq \lim_{f:K(m) \to c} T(m)$
+existiert.
+% Die Indexkategorie des Limes sieht also wie folgt aus:
+% Objekte der Indexkategorie sind Morphismen K(m) --> c, wobei m aus M beliebig
+% sein kann.
+% Morphismen zwischen K(m) --> c und K(m') --> c sind Morphismen g : m --> m'
+% derart, dass das Dreieck mit den Kanten K(g), K(m') --> c und K(m) --> c
+% kommutiert.
+\begin{enumerate}
+\item Erkläre, wie man diese Setzung zu einem Funktor~$R : \C \to \A$ ausdehnen
+kann.
+\item Beweise, dass~$R$ eine Rechts-Kan-Erweiterung von~$T$ längs~$K$ wird.
+\end{enumerate}
+\end{aufgabe}
