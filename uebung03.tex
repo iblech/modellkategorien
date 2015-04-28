@@ -1,5 +1,7 @@
 \documentclass{uebblatt}
 
+\newcommand{\sukk}{\mathrm{succ}}
+
 \begin{document}
 
 \maketitle{3}{\emph{Jedes Konzept ist eine Kan-Erweiterung.}}
@@ -11,7 +13,7 @@ Ende von $\I^\op \times \I \to \I \stackrel{F}{\to} \C$. Als Formel: $\lim F =
 \end{aufgabe}
 
 \begin{aufgabe}{Kan-Erweiterungen von darstellbaren Koprägarben}
-Sei~$K : \M \to \C$ ein Funktor. Zeige:
+Sei~$K : \M \to \C$ ein Funktor und~$X \in \M$. Zeige:
 $\operatorname{Lan}_K \Hom_\M(X, \smallplaceholder) =
   \Hom_\C(K(X), \smallplaceholder)$.
 \end{aufgabe}
@@ -38,12 +40,43 @@ Sei~$K : \M \to \C$ ein volltreuer Funktor. Sei~$T : \M \to \A$ ein Funktor
 derart, dass die punktweise Links-Kan-Erweiterung~$\mathrm{Lan}_K(T)$
 existiert. Zeige: Die kanonische natürliche Transformation~$T \Rightarrow
 \mathrm{Lan}_K(T) \circ K$ ist ein Isomorphismus.
-
-{\tiny\emph{Tipp:} Die Kolimesformel für~$\mathrm{Lan}_K(T)$ lässt sich stark
-vereinfachen.\par}
+%
+%{\tiny\emph{Tipp:} Die Kolimesformel für~$\mathrm{Lan}_K(T)$ lässt sich stark
+%vereinfachen.\par}
 \end{aufgabe}
 
-\includegraphics{images/kuende}
+\begin{aufgabe}{Beispiele für transfinite Kompositionen in der Kategorie der Mengen}
+\begin{enumerate}
+\item Was ist die transfinite Komposition~$\NN \xra{\sukk} \NN \xra{\sukk} \NN
+\xra{\sukk} \cdots$?
+% Dabei ist succ : N --> N die Abbildung x |-> x + 1.
+\item Sei~$f : X \to X$ eine Abbildung derart, dass sich für jedes~$x \in X$
+die Folge~$(f^n(x))_{n \in \NN}$ stabilisiert. Was ist die transfinite
+Komposition~$X \to X \to X \to \cdots$?
+\item \emph{Für Fans von Garben.} Sei~$\F$ eine Garbe auf dem~$\RR^n$. Was ist
+die transfinite Komposition der Einschränkungsabbildungen~$\F(B_1(0)) \to
+\F(B_{1/2}(0)) \to \F(B_{1/3}(0)) \to \cdots$?
+\end{enumerate}
+\end{aufgabe}
+
+{\centering
+\includegraphics[scale=0.6]{images/kuende}
+\par}
+% mit besten Dank an Gesa
+
+\newpage
+
+\begin{aufgabe*}{Bonusaufgabe}{Spiel und Spaß in der Kategorie der topologischen Räume}
+\begin{enumerate}
+\item Was ist das Kofaserprodukt (Pushout) des folgenden Diagramms?
+\[ \xymatrixcolsep{3pc}\xymatrixrowsep{3pc}\xymatrix{
+  S^1 \ar[r] \ar@{^{(}->}[d] & \mathrm{pt} \ar@{-->}[d] \\
+  D^1 \ar@{-->}[r] & ?
+} \]
+\item Überlege dir ein möglichst kniffliges Diagramm dieser Art und fordere
+deine MitkohomologInnen heraus!
+\end{enumerate}
+\end{aufgabe*}
 
 \end{document}
 
