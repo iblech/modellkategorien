@@ -1,5 +1,11 @@
 \documentclass{uebblatt}
 
+\usepackage{draftwatermark}                                                                          
+                                                                                                     
+\definecolor{pink}{rgb}{0.95,0.9,0.95}                                                               
+\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}                                                
+\SetWatermarkScale{1}                                                                                
+
 \newcommand{\sukk}{\mathrm{succ}}
 
 \begin{document}
@@ -65,8 +71,9 @@ die transfinite Komposition der Einschränkungsabbildungen~$\F(B_1(0)) \to
 % mit besten Dank an Gesa
 
 \newpage
+\SetWatermarkText{}
 
-\begin{aufgabe*}{Bonusaufgabe}{Spiel und Spaß in der Kategorie der topologischen Räume}
+\begin{aufgabe*}{Bonusaufgabe}{Bastelspaß in der Kategorie der topologischen Räume}
 \begin{enumerate}
 \item Was ist das Kofaserprodukt (Pushout) des folgenden Diagramms?
 \[ \xymatrixcolsep{3pc}\xymatrixrowsep{3pc}\xymatrix{
