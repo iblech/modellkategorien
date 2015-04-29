@@ -1,11 +1,5 @@
 \documentclass{uebblatt}
 
-\usepackage{draftwatermark}                                                                          
-                                                                                                     
-\definecolor{pink}{rgb}{0.95,0.9,0.95}                                                               
-\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}                                                
-\SetWatermarkScale{1}                                                                                
-
 \newcommand{\sukk}{\mathrm{succ}}
 
 \begin{document}
@@ -26,13 +20,13 @@ $\operatorname{Lan}_K \Hom_\M(X, \smallplaceholder) =
 
 \begin{aufgabe}{Die Limesformel für punktweise Kan-Erweiterungen}
 Sei~$K : \M \to \C$ ein Funktor. Sei~$T : \M \to \A$ ein Funktor derart, dass
-für alle Objekte~$c \in \C$ der Limes~$R(c) \defeq \lim_{f:K(m) \to c} T(m)$
+für alle Objekte~$c \in \C$ der Limes~$R(c) \defeq \lim_{f:c \to K(m)} T(m)$
 existiert.
 % Die Indexkategorie des Limes sieht also wie folgt aus:
-% Objekte der Indexkategorie sind Morphismen K(m) --> c, wobei m aus M beliebig
+% Objekte der Indexkategorie sind Morphismen c --> K(m), wobei m aus M beliebig
 % sein kann.
-% Morphismen zwischen K(m) --> c und K(m') --> c sind Morphismen g : m --> m'
-% derart, dass das Dreieck mit den Kanten K(g), K(m') --> c und K(m) --> c
+% Morphismen zwischen c --> K(m) und c --> K(m') sind Morphismen g : m --> m'
+% derart, dass das Dreieck mit den Kanten c --> K(m), K(g) und c --> K(m)
 % kommutiert.
 \begin{enumerate}
 \item Erkläre, wie man diese Setzung zu einem Funktor~$R : \C \to \A$ ausdehnen
@@ -46,9 +40,7 @@ Sei~$K : \M \to \C$ ein volltreuer Funktor. Sei~$T : \M \to \A$ ein Funktor
 derart, dass die punktweise Links-Kan-Erweiterung~$\mathrm{Lan}_K(T)$
 existiert. Zeige: Die kanonische natürliche Transformation~$T \Rightarrow
 \mathrm{Lan}_K(T) \circ K$ ist ein Isomorphismus.
-%
-%{\tiny\emph{Tipp:} Die Kolimesformel für~$\mathrm{Lan}_K(T)$ lässt sich stark
-%vereinfachen.\par}
+% Tipp: Die Kolimesformel für \mathrm{Lan}_K(T) lässt sich stark vereinfachen.
 \end{aufgabe}
 
 \begin{aufgabe}{Beispiele für transfinite Kompositionen in der Kategorie der Mengen}
@@ -71,7 +63,6 @@ die transfinite Komposition der Einschränkungsabbildungen~$\F(B_1(0)) \to
 % mit besten Dank an Gesa
 
 \newpage
-\SetWatermarkText{}
 
 \begin{aufgabe*}{Bonusaufgabe}{Bastelspaß in der Kategorie der topologischen Räume}
 \begin{enumerate}
@@ -91,7 +82,7 @@ deine MitkohomologInnen heraus!
 Sei~$F : \C \times \D \to \Set$ ein Funktor.
 \begin{enumerate}
 \item Konstruiere einen kanonischen Morphismus~$\lambda : \colim\limits_{c \in \C}
-\lim\limits_{d \in D} F(c,d) \to \lim\limits_{d \in \D} \colim\limits_{c \in \C} F(c,d)$.
+\lim\limits_{d \in \D} F(c,d) \to \lim\limits_{d \in \D} \colim\limits_{c \in \C} F(c,d)$.
 \item Sei~$\C$ sogar eine filtrierte Kategorie. Zeige, dass dann~$\lambda$ ein Isomorphismus ist.
 \end{enumerate}
 \end{aufgabe}

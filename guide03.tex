@@ -1,0 +1,46 @@
+\documentclass{uebblatt}
+\begin{document}
+
+\section*{Guide zu Übungsblatt 3}
+
+Für \textbf{Aufgaben~2 und~4} benötigt man \emph{Links}-Kan-Erweiterungen. Die genaue
+Definition ist folgende. Eine Links-Kan-Erweiterung von~$T : M \to A$ längs~$K
+: M \to C$ ist ein Tupel~$(L,\eta)$ bestehend aus
+\begin{itemize}
+\item einem Morphismus~$L : C \to A$ und
+\item einem 2-Morphismus~$\eta : T \Rightarrow L \circ K$
+\end{itemize}
+sodass gilt:
+Für jedes Tupel~$(L' : C \to A,\eta' : T \Rightarrow L' \circ K)$ existiert
+genau ein 2-Morphismus~$\sigma : L \Rightarrow L'$ mit~$
+\sigma K \circ \eta = \eta'$.
+
+Für \textbf{Aufgabe~2} ist folgende Charakterisierung nützlich: Ein Funktor~$L : C \to
+A$ ist genau dann Links-Kan-Erweiterung von~$T$ längs~$K$, wenn es in~$S \in
+[C,A]$ natürliche Isomorphismen
+\[ \Hom_{[C,A]}(L, S) \cong \Hom_{[M,A]}(T, S \circ K) \]
+gibt. Mit dieser Aussage und dem (klassischen) Yoneda-Lemma kann man
+die Aufgabe mit viel Freude lösen. Ihr werdet nicht mehr als eine Zeile
+benötigen.
+
+Für \textbf{Aufgabe~4} benötigt man die \emph{Kolimesformel} für
+Links-Kan-Erweiterungen; dank der Volltreuheit von~$K$ vereinfacht sich in der
+Aufgabe diese ganz enorm. Die Formel lautet:
+\[ (\mathrm{Lan}_K(T))(c) = \colim_{f:K(m) \to c} T(m). \]
+Die genaue Aussage dazu ist folgende (dual zu Aufgabe~3): Wenn für jedes
+Objekt~$c \in \C$ der genannte Kolimes existiert, kann man diese Zuordnung zu
+einem Funktor~$\mathrm{Lan}_K(T) : \C \to \A$ ausdehnen, und dieser Funktor
+wird dann zusammen mit der Transformation~$\eta : T \Rightarrow \mathrm{Lan}_K(T)
+\circ K$ (welche als Komponenten~$\eta_m : T(m) \to \mathrm{Lan}_K(T)(K(m))$
+kanonische Morphismen in den Kokegel hat) zu einer Links-Kan-Erweiterung
+von~$T$ längs~$K$.
+
+In \textbf{Aufgabe~5} ist mit~$\mathrm{succ}$ die Abbildung~$\NN \to \NN$, $x \mapsto x
++ 1$ gemeint. Teil~c) muss natürlich nur bearbeiten, wer Garben kennt (und Fan
+von ihnen ist).
+
+In der \textbf{Bonusaufgabe} meint~$D^1$ den vollen Einheitskreis, also~$\{ (x,y) \in
+\RR^2 \,|\, x^2 + y^2 \leq 1 \}$. Die Einbettung~$S^1 \hookrightarrow D^1$ soll
+die Einheitskreislinie auf die Randlinie von~$D^1$ abbilden.
+
+\end{document}
