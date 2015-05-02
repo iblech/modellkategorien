@@ -29,3 +29,18 @@ newtype End s = End { runEnd :: forall a. s a a }
 -- Ran k t c = End ((a,b) |-> (c -> k a) -> t b)
 
 -- Lan k t c = Coend ((a,b) |-> (k a -> c) x t b)
+
+data Tensor  f g   = forall a. Tensor  (f a, g a)
+data Tensor' f g b = forall a. Tensor' (f a, g a b)
+-- Currying auf Typebene?
+
+class Cofunctor f where
+    cofmap :: (a -> b) -> (f b -> f a)
+
+newtype Y a b = MkYoneda { runYoneda :: b -> a }
+
+ninja :: (Cofunctor f) => Tensor' f Y b -> f b
+ninja (Tensor' (x, phi)) = cofmap (runYoneda phi) x
+
+ninja' :: (Cofunctor f) => f b -> Tensor' f Y b
+ninja' x = Tensor' (x, MkYoneda id)
