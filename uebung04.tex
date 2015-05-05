@@ -1,16 +1,43 @@
 \documentclass{uebblatt}
 
+\usepackage{draftwatermark}
+\definecolor{pink}{rgb}{0.95,0.9,0.95}
+\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}
+\SetWatermarkScale{1}
+
 \begin{document}
 
 \maketitle{4}{}
 
-\begin{aufgabe}{Kan-Erweiterungen als Adjunktionen}
+\begin{aufgabe}{Adjunktionen als Kan-Erweiterungen}
 Sei~$G : \M \to \C$ ein Funktor (oder ein Morphismus in einer beliebigen
 2-Kategorie). Zeige, dass~$G$ genau dann einen Linksadjungierten besitzt, wenn
 eine Rechts-Kan-Erweiterung von~$\Id_\M$ längs~$G$ existiert und~$G$ diese
 bewahrt.
 \end{aufgabe}
 
+\begin{aufgabe}{Hom als Delta-Distribution}
+Sei~$F : \C^\op \to \Set$ eine Prägarbe und~$c \in \C$. Zeige:
+$\Hom_\C(\smallplaceholder, c) \otimes F = F(c)$.
+\end{aufgabe}
+
+\begin{aufgabe}{Retrakte in Modulkategorien}
+Sei~$i : U \hookrightarrow M$ die Inklusion eines Untermoduls. Zeige: Genau
+dann ist~$U$ ein direkter Summand von~$M$, wenn~$i$ ein Linksinverses besitzt.
+\end{aufgabe}
+
+\begin{aufgabe}{Komposition von Pushout-Quadraten}
+Zeige: Sind das linke und rechte Quadrat jeweils Pushout-Diagramme, so ist auch
+das Gesamtrechteck ein Pushout-Diagramm.
+\[ \xymatrix{
+  A \ar[r]\ar[d] & B \ar[r]\ar[d] & C \ar[d] \\
+  D \ar[r] & E \ar[r] & F
+} \]
+\end{aufgabe}
+
+Fehlt noch: Beweise aus der Vorlesung \ldots
+
+\vfill
 \centering
 \href{http://fashions-cloud.com/pages/c/cat-lifting-weights/}{\includegraphics[height=4cm]{images/lifting-property-1}}
 \qquad
@@ -19,5 +46,4 @@ bewahrt.
 
 \end{document}
 
-Retrakte in der Kategorie der Moduln?
 Interessante Retrakte von Morphismen in Top?
