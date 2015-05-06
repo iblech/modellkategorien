@@ -1,10 +1,5 @@
 \documentclass{uebblatt}
 
-\usepackage{draftwatermark}
-\definecolor{pink}{rgb}{0.95,0.9,0.95}
-\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}
-\SetWatermarkScale{1}
-
 \begin{document}
 
 \maketitle{4}{}
@@ -16,19 +11,19 @@ eine Rechts-Kan-Erweiterung von~$\Id_\M$ längs~$G$ existiert und~$G$ diese
 bewahrt.
 \end{aufgabe}
 
-\begin{aufgabe}{Hom als Delta-Distribution}
-Sei~$F : \C^\op \to \Set$ eine Prägarbe und~$c \in \C$. Zeige:
-$\Hom_\C(\smallplaceholder, c) \otimes F = F(c)$.
-\end{aufgabe}
-
 \begin{aufgabe}{Retrakte in Modulkategorien}
 Sei~$i : U \hookrightarrow M$ die Inklusion eines Untermoduls. Zeige: Genau
 dann ist~$U$ ein direkter Summand von~$M$, wenn~$i$ ein Linksinverses besitzt.
 \end{aufgabe}
 
-\begin{aufgabe}{Komposition von Pushout-Quadraten}
-Zeige: Sind das linke und rechte Quadrat jeweils Pushout-Diagramme, so ist auch
-das Gesamtrechteck ein Pushout-Diagramm.
+\begin{aufgabe}{Zellkomplexe und Koprodukte}
+Sei~$\I$ eine Menge von Morphismen in einer kovollständigen Kategorie.
+Sei~$X$ ein Objekt. Sei~$f : A \to B$ ein relativer~$\I$-Zellkomplex. Zeige: Der
+induzierte Morphismus~$A \amalg X \to B \amalg X$ ist wieder ein
+relativer~$\I$-Zellkomplex.
+
+\emph{Tipp:} Sind das linke und rechte Quadrat jeweils Pushout-Diagramme, so
+ist auch das Gesamtrechteck ein Pushout-Diagramm.
 \[ \xymatrix{
   A \ar[r]\ar[d] & B \ar[r]\ar[d] & C \ar[d] \\
   D \ar[r] & E \ar[r] & F
@@ -36,10 +31,17 @@ das Gesamtrechteck ein Pushout-Diagramm.
 \end{aufgabe}
 \vspace{-1em}
 
-\begin{aufgabe}{Transfinite Kompositionen von relativen Zellkomplexen}
-Sei~$\I$ eine Menge von Morphismen in einer kovollständigen Kategorie.
-Zeige, dass die transfinite Komposition von relativen~$\I$-Zellkomplexen
-ein relativer~$\I$-Zellkomplex ist.
+\begin{aufgabe}{Beispiele für Modellstrukturen}
+\begin{enumerate}
+\item Zeige, dass die Kategorie der Mengen zusammen mit den Injektionen und
+Surjektionen eine Modellkategorie bildet.
+\item Sei~$\M$ eine Modellkategorie. Baue auf der Kategorie~$\M_\star$ der
+punktierten Objekte in~$\M$ eine Modellstruktur.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Linkshomotopie}
+\emph{Kommt gleich}.
 \end{aufgabe}
 
 \vfill
@@ -51,4 +53,10 @@ ein relativer~$\I$-Zellkomplex ist.
 
 \end{document}
 
-Interessante Retrakte von Morphismen in Top?
+\begin{aufgabe}{Hom als Delta-Distribution}
+Sei~$F : \C^\op \to \Set$ eine Prägarbe und~$c \in \C$. Zeige:
+$\Hom_\C(\smallplaceholder, c) \otimes F = F(c)$.
+\end{aufgabe}
+
+Zeige, dass die transfinite Komposition von relativen~$\I$-Zellkomplexen
+ein relativer~$\I$-Zellkomplex ist.
