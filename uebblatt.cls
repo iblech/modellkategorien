@@ -140,6 +140,7 @@
 \newcommand{\Kom}{\mathrm{Kom}}
 \newcommand{\Komb}{\mathrm{Kom}^\mathrm{b}}
 \newcommand{\Met}{\mathrm{Met}}
+\newcommand{\pt}{\mathrm{pt}}
 \DeclareMathOperator{\sk}{sk}
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\Spec}{Spec}

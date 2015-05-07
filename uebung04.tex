@@ -1,4 +1,5 @@
 \documentclass{uebblatt}
+\usepackage{stmaryrd}
 
 \begin{document}
 
@@ -21,19 +22,18 @@ Sei~$\I$ eine Menge von Morphismen in einer kovollständigen Kategorie.
 Sei~$X$ ein Objekt. Sei~$f : A \to B$ ein relativer~$\I$-Zellkomplex. Zeige: Der
 induzierte Morphismus~$A \amalg X \to B \amalg X$ ist wieder ein
 relativer~$\I$-Zellkomplex.
-
-\emph{Tipp:} Sind das linke und rechte Quadrat jeweils Pushout-Diagramme, \\
-so ist auch das Gesamtrechteck ein Pushout-Diagramm.
-\marginpar{\vspace*{-1cm}\hspace*{-3cm}$\xymatrix{
-  A \ar[r]\ar[d] & B \ar[r]\ar[d] & C \ar[d] \\
-  D \ar[r] & E \ar[r] & F
-}$}
 \end{aufgabe}
+
+\begin{aufgabe}{Zylinder und Überlagerungen}
+Sei $E \xra{\pi} X$ eine Überlagerung. Sei~$\pt \xra{\iota} [0,1]$ die
+Inklusion eines Intervallendes. Zeige~$\iota \boxslash \pi$.
+\end{aufgabe}
+\vspace{-1em}
 
 \begin{aufgabe}{Erste Schritte mit Modellstrukturen}
 \begin{enumerate}
-\item Zeige, dass die Kategorie der Mengen zusammen mit den Injektionen und
-Surjektionen eine Modellkategorie bildet.
+\item Zeige, dass die Kategorie der Mengen zusammen mit den Isomorphismen,
+Injektionen und Surjektionen eine Modellkategorie bildet.
 \item Zeige, dass in einer Modellkategorie je zwei der folgenden fünf Klassen
 (außer $(\C,\F \cap \W)$ und $(\C \cap \W,\F)$) die anderen eindeutig
 festlegen: $\W$, $\C$, $\F$, $\C \cap \W$, $\F \cap \W$.
@@ -42,10 +42,10 @@ punktierten Objekte in~$\M$ eine Modellstruktur.
 \end{enumerate}
 \end{aufgabe}
 
-\begin{aufgabe}{Linkshomotopie}
+\begin{aufgabe}{Eindeutigkeit von Lifts}
 Sei in einer Modellkategorie ein Quadrat mit zwei Lifts~$h$ und~$k$ gegeben. \\
-Zeige, dass~$h$ und~$k$ zueinander linkshomotop sind.
-\marginpar{\vspace*{-1.8cm}\hspace*{-2.6cm}$
+Zeige, dass~$h$ und~$k$ zueinander sehr gut linkshomotop sind.
+\marginpar{\vspace*{-2.0cm}\hspace*{-2.6cm}$
   \xymatrixcolsep{3pc}\xymatrixrowsep{3pc}
   \xymatrix{
     A \ar[r] \ar@{^{(}->}[d] & X \ar@{->>}[d]^{\sim} \\
@@ -56,9 +56,9 @@ $}
 
 \vfill
 \centering
-\href{http://fashions-cloud.com/pages/c/cat-lifting-weights/}{\includegraphics[height=4cm]{images/lifting-property-1}}
+\href{http://fashions-cloud.com/pages/c/cat-lifting-weights/}{\includegraphics[height=3.5cm]{images/lifting-property-1}}
 \qquad
-\href{http://www.woophotos.com/weight-lifter/}{\includegraphics[height=4cm]{images/lifting-property-2}}
+\href{http://www.woophotos.com/weight-lifter/}{\includegraphics[height=3.5cm]{images/lifting-property-2}}
 \par
 
 \end{document}
