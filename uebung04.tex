@@ -22,26 +22,36 @@ Sei~$X$ ein Objekt. Sei~$f : A \to B$ ein relativer~$\I$-Zellkomplex. Zeige: Der
 induzierte Morphismus~$A \amalg X \to B \amalg X$ ist wieder ein
 relativer~$\I$-Zellkomplex.
 
-\emph{Tipp:} Sind das linke und rechte Quadrat jeweils Pushout-Diagramme, so
-ist auch das Gesamtrechteck ein Pushout-Diagramm.
-\[ \xymatrix{
+\emph{Tipp:} Sind das linke und rechte Quadrat jeweils Pushout-Diagramme, \\
+so ist auch das Gesamtrechteck ein Pushout-Diagramm.
+\marginpar{\vspace*{-1cm}\hspace*{-3cm}$\xymatrix{
   A \ar[r]\ar[d] & B \ar[r]\ar[d] & C \ar[d] \\
   D \ar[r] & E \ar[r] & F
-} \]
+}$}
 \end{aufgabe}
-\vspace{-1em}
 
-\begin{aufgabe}{Beispiele für Modellstrukturen}
+\begin{aufgabe}{Erste Schritte mit Modellstrukturen}
 \begin{enumerate}
 \item Zeige, dass die Kategorie der Mengen zusammen mit den Injektionen und
 Surjektionen eine Modellkategorie bildet.
+\item Zeige, dass in einer Modellkategorie je zwei der folgenden fünf Klassen
+(außer $(\C,\F \cap \W)$ und $(\C \cap \W,\F)$) die anderen eindeutig
+festlegen: $\W$, $\C$, $\F$, $\C \cap \W$, $\F \cap \W$.
 \item Sei~$\M$ eine Modellkategorie. Baue auf der Kategorie~$\M_\star$ der
 punktierten Objekte in~$\M$ eine Modellstruktur.
 \end{enumerate}
 \end{aufgabe}
 
 \begin{aufgabe}{Linkshomotopie}
-\emph{Kommt gleich}.
+Sei in einer Modellkategorie ein Quadrat mit zwei Lifts~$h$ und~$k$ gegeben. \\
+Zeige, dass~$h$ und~$k$ zueinander linkshomotop sind.
+\marginpar{\vspace*{-1.8cm}\hspace*{-2.6cm}$
+  \xymatrixcolsep{3pc}\xymatrixrowsep{3pc}
+  \xymatrix{
+    A \ar[r] \ar@{^{(}->}[d] & X \ar@{->>}[d]^{\sim} \\
+    B \ar@/^/@{-->}[ru]^h \ar@/_/@{-->}[ru]_k \ar[r] & Y
+  }
+$}
 \end{aufgabe}
 
 \vfill

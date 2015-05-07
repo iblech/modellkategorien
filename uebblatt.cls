@@ -89,6 +89,7 @@
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\U}{\mathcal{U}}
 \newcommand{\V}{\mathcal{V}}
+\newcommand{\W}{\mathcal{W}}
 \newcommand{\I}{\mathcal{I}}
 \renewcommand{\H}{\mathcal{H}}
 \renewcommand{\O}{\mathcal{O}}
