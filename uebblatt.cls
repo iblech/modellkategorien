@@ -141,6 +141,8 @@
 \newcommand{\Komb}{\mathrm{Kom}^\mathrm{b}}
 \newcommand{\Met}{\mathrm{Met}}
 \newcommand{\pt}{\mathrm{pt}}
+\newcommand{\Ho}{\mathrm{Ho}}
+\DeclareMathOperator{\Mor}{Mor}
 \DeclareMathOperator{\sk}{sk}
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\Spec}{Spec}

@@ -7,7 +7,8 @@
 
 \begin{document}
 
-\maketitle{5}{}
+\maketitle{5}{\emph{Lokal präsentierbare Kategorien: große Kategorien, die
+von kleinen Daten erzeugt werden.}}
 
 \begin{aufgabe}{Kompakte Objekte in Modulkategorien}
 \begin{enumerate}
@@ -33,19 +34,35 @@ nicht~$\aleph_0$-kompakt ist.
 \begin{aufgabe}{Vertauschbarkeit von filtrierten Kolimiten mit endlichen Limiten}
 Sei~$F : \C \times \D \to \Set$ ein Funktor.
 \begin{enumerate}
-\item Konstruiere einen kanonischen Morphismus~$\lambda : \colim\limits_{c \in \C}
+\item Konstruiere einen kanonischen Morphismus~$\psi : \colim\limits_{c \in \C}
 \lim\limits_{d \in \D} F(c,d) \to \lim\limits_{d \in \D} \colim\limits_{c \in \C} F(c,d)$.
-\item Sei~$\C$ sogar eine filtrierte Kategorie. Zeige, dass dann~$\lambda$ ein Isomorphismus ist.
+\item Sei~$\C$ sogar eine filtrierte Kategorie. Zeige, dass dann~$\psi$ ein Isomorphismus ist.
 \end{enumerate}
 Folgere: Endliche Kolimiten von~$\aleph_0$-kompakten Objekten
 sind~$\aleph_0$-kompakt.
 \end{aufgabe}
 
-\begin{aufgabe}{Morphismen zwischen kofasernden und fasernden Objekten}
-Seien~$X$ ein kofaserndes und~$Y$ ein faserndes Objekt in einer
-Modellkategorie. Zeige, dass der kanonische Morphismus~$\pi(X,Y) \to
-\pi(RX,QY)$ bijektiv ist.
+\begin{aufgabe}{Das Theorem von Whitehead für Modellkategorien}
+Zeige, dass ein Morphismus zwischen bifasernden Objekten in einer
+Modellkategorie genau dann eine Homotopieäquivalenz ist, wenn er eine schwache
+Äquivalenz ist.
 \end{aufgabe}
+
+\begin{aufgabe}{Morphismen zwischen kofasernden und fasernden Objekten}
+\begin{enumerate}
+\item
+Seien~$X$ ein kofaserndes und~$Y$ ein faserndes Objekt in einer
+Modellkategorie~$\M$. Zeige, dass der kanonische Morphismus~$\pi(X,Y) \to
+\pi(RX,QY)$ bijektiv ist.
+\item Beweise, dass in~$\Ho(\M)$ jeder Morphismus Komposition von Morphismen der
+Form~$\gamma(f)$ mit~$f \in \Mor\M$ und Morphismen der Form~$\gamma(f)^{-1}$
+mit~$f \in \W$ ist.
+\end{enumerate}
+\end{aufgabe}
+
+\centering
+\includegraphics[scale=0.70]{images/tqft}
+\par
 
 \end{document}
 
