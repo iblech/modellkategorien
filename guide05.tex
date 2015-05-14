@@ -1,0 +1,131 @@
+\documentclass{uebblatt}
+
+\newcommand{\stopper}{\begin{center}$\heartsuit$\end{center}}
+\begin{document}
+
+\section*{Guide zu Übungsblatt 5}
+
+Ein \textbf{Tipp zu Aufgabe~2} kann bei mir abgeholt werden. Eine Mail nur mit
+Betreff und ohne Inhalt genügt völlig.
+
+\textbf{Tipp zu Aufgabe~4}. Die Rückrichtung ist etwas einfacher als die
+Hinrichtung und auch schon sehr interessant (schließlich konstruieren wir ein
+Pseudoinverses; es ist doch spannend, woher das kommt!). Verwende folgendes
+Theorem:
+\begin{quote}Sei~$X$ kofasernd. Sei~$p : Z \stackrel{\sim}{\twoheadrightarrow} Y$
+eine azyklische Faserung. Dann ist~$p_\star : \pi^\ell(X,Z) \to
+\pi^\ell(X,Y),\,[f] \mapsto [p \circ f]$ eine Bijektion.
+\end{quote}
+Für geeignete Wahl von~$X$,~$Z$,~$Y$ und~$p$ ist nämlich die Identität ein
+Element der rechten Seite und besitzt dann ein Urbild. Eine Faktorisierung des
+gegebenen Morphismus könnte hilfreich sein.
+
+Bei \textbf{Aufgabe~5a)} kann man die Abbildung in die umgekehrte Richtung
+explizit angeben. Denkt dran, dass fasernder und kofasernder Ersatz mit
+kanonischen Morphismen daher kommen. Es ist auch nützlich, sich die Diagramme
+aufzumalen, die für einen Morphismus~$f : X \to Y$ den Morphismus~$RQf$
+definieren.
+
+Zur technischen Vereinfachung der Aufgabe kann man ausnutzen, dass ohne
+Beschränkung der Allgemein~$RQX = RX$ und~$RQY = QY$ gilt; schließlich ist~$X$
+schon kofasernd und~$Y$ schon fasernd.
+
+Tipps zu \textbf{Aufgabe 5b)} können bei mir per Mail abgeholt werden!
+
+\stopper
+
+\textbf{Endliche Mengen in konstruktiver Mathematik.} Dieser Abschnitt ist
+(nur) für die Fans konstruktiver Mathematik unter euch gedacht.
+Eine Menge~$X$ heißt genau dann \emph{Kuratowski-endlich}, wenn es eine
+eine Surjektion~$[n] \twoheadrightarrow X$ gibt (mit~$n \geq 0$), wobei~$[n] =
+\{0,1,\ldots,n-1\}$. Eine Menge~$X$ heißt genau dann \emph{endlich}, wenn es
+eine Bijektion~$[n] \stackrel{\cong}{\to} X$ gibt.
+
+Von Teilmengen von (Kuratowski-)endlichen Mengen kann man im Allgemeinen nicht
+zeigen, dass sie wieder (Kuratowski-)endlich sind. Es sind aber Quotienten von
+Kuratowski-endlichen Mengen wieder Kuratowski-endlich. Endliche Mengen sind
+stets diskret, Kura\-towski-endliche Mengen im Allgemeinen aber nicht.
+Konstruktiv gibt es noch weitere Endlichkeitsbegriffe, und man kann alle auch
+so formulieren, dass sie nicht Bezug nehmen auf die (unendlich große) Menge der
+natürlichen Zahlen.
+
+\begin{aufgabe*}{Bonusaufgabe 1}{Kompakte Objekte in der Kategorie der Mengen konstruktiv}
+
+Zeige: In der Kategorie der Mengen ist eine Menge~$X$ genau dann
+Kuratowski-endlich, wenn~$\Hom_\Set(X,\smallplaceholder)$ mit filtrierten
+Kolimiten von Monomorphismen vertauscht; und genau dann endlich,
+wenn~$\Hom_\Set(X,\smallplaceholder)$ mit beliebigen filtrierten Kolimiten
+vertauscht.
+
+\emph{Bemerkung:} Konstruktiv heißt eine Kategorie genau dann filtriert, wenn
+alle Diagramme mit endlicher (nicht Kuratowski-endlicher) Indexkategorie einen
+Kokegel zulassen. Das ist äquivalent dazu, dass die Kategorie ein Objekt
+enthält, zu je zwei Objekten ein Möchtegernkoprodukt enthält und zu je zwei
+parallelen Morphismen ein Möch\-te\-gern\-ko\-dif\-fe\-renz\-kern enthält.
+\end{aufgabe*}
+\vspace{-1em}
+
+\stopper
+
+\textbf{Angst vor bösen Formulierungen.}
+Mich persönlich hat es immer etwas beunruhigt, dass die meisten AutorInnen die
+1-kategorielle Definition der Lokalisierung verwenden, habe ich doch auf dem
+nLab gelernt, dass diese in diesem Kontext im technischen Sinn \emph{böse} ist,
+da sie Funktoren auf Gleichheit testet. Hinzu kommt noch, dass manche AutorInnen
+in der 1-kategoriellen Definition zusätzlich fordern, dass der
+Lokalisierungsfunktor~$Q : \C \to \C[\W^{-1}]$ auf Objekten bijektiv ist; das
+ist doch eine unnatürliche Bedingung, die in universellen Eigenschaften nichts
+verloren hat.
+
+Sogar in dem wunderschönen Buch
+\href{http://www.math.harvard.edu/~eriehl/cathtpy.pdf}{\emph{Categorical
+Homotopy Theory}} von Emily
+Riehl (frei online verfügbar), in dem der Begriff \emph{Kan-Erweiterung} mehr als 130 Mal vorkommt,
+ist das so!
+
+Wer diese Unstimmigkeiten auch beunruhigend findet, kann die folgende
+Bonusaufgabe bearbeiten, um diese aus der Welt zu schaffen. Gern geschehen!
+
+\begin{aufgabe*}{Bonusaufgabe 2}{Die 1- und 2-kategorielle Definition der Lokalisierung}
+Sei~$\C$ eine Kategorie und~$\W$ eine Klasse von Morphismen in~$\C$. Dann ist
+die \emph{1-kategorielle Lokalisierung} eine Kategorie~$\C[\W^{-1}]$ zusammen
+mit einem Funktor~$Q : \C \to \C[\W^{-1}]$, welcher die Morphismen aus~$\W$ auf
+Isomorphismen schickt, sodass folgende 1-kategorielle universelle Eigenschaft
+erfüllt ist:
+\begin{quote}Ist~$F : \C \to \D$ irgendein Funktor, der die Morphismen aus~$\W$
+auf Isomorphismen schickt, so gibt es genau einen Funktor~$\bar F : \C[\W^{-1}]
+\to \D$ mit~$\bar F \circ Q = F$. Anders formuliert: Für jede Kategorie~$\D$
+induziert~$Q^\star$ eine Bijektion zwischen den Funktoren~$\C[\W^{-1}] \to \D$
+und denjenigen Funktoren~$\C \to \D$, welche die Morphismen aus~$\W$ auf
+Isomorphismen schicken.
+\end{quote}
+Wie in der Vorlesung diskutiert sollte man diese Eigenschaft allerdings
+eigentlich nie fordern. Moralisch besser ist folgende 2-kategorielle
+universelle Eigenschaft:
+\begin{quote}
+Für jede Kategorie~$\D$ induziert~$Q^\star$ eine Äquivalenz zwischen der
+Kategorie der Funktoren~$\C[\W^{-1}] \to \D$ und der Kategorie derjenigen
+Funktoren~$\C \to \D$, welche die Morphismen aus~$\W$ auf Isomorphismen
+schicken.
+\end{quote}
+\begin{enumerate}
+\item Zeige, dass eine Lösung des 1-kategoriellen Optimierungsproblems
+eindeutig ist bis auf eindeutige Isomorphie.
+\item Zeige, dass eine Lösung des 2-kategoriellen Optimierungsproblems
+eindeutig ist bis auf Äquivalenz, wobei je zwei Äquivalenzen eindeutig isomorph
+zueinander sind.
+\item Zeige: Sei~$Q : \C \to \C[\W^{-1}]$ Lösung des 1-kategoriellen Problems.
+Zeige, dass~$Q$ auf Objekten bijektiv ist, dass also die von~$Q$ induzierte
+Abbildung~$\Ob \C \to \Ob \C[\W^{-1}]$ bijektiv ist.
+
+\emph{Tipp:} Für Injektivität verwende in der universellen Eigenschaft für~$\D$
+die Kategorie mit denselben Objekten wie~$\C$ und genau einem Morphismus
+zwischen je zwei Objekten.
+\item Zeige: Ist~$Q : \C \to \C[\W^{-1}]$ eine Lösung des 1-kategoriellen
+Problems, so auch des 2-kategoriellen.
+
+\emph{Tipp:} Verwende das Ergebnis aus Teilaufgabe~c).
+\end{enumerate}
+\end{aufgabe*}
+
+\end{document}
