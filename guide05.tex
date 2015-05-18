@@ -39,6 +39,33 @@ die Identitäten. Dann ist der Kolimes der indiskrete Raum auf der Menge~$X
 \amalg \NN$ und die kanonische Injektion~$X \to X \amalg \NN$ faktorisiert
 nicht über einen der Räume~$Y_n$.
 
+\textbf{Hinweis zu Aufgabe~3}. Aufgrund der vielen Indizes, Kegel und Kokegel
+wird die Lösung möglicherweise unübersichtlich. Wer mag, kann folgende
+abgespeckte Aufgabe bearbeiten. Sie enthält genau dieselben interessanten
+Aspekte, kommt aber mit weniger Technik aus.
+
+Sei~$C$ eine Partialordnung (zum Beispiel~$C = \NN$) und~$D$ eine Menge.
+Sei für jedes Paar~$(c,d) \in C \times D$ eine Teilmenge~$F_{cd}$ einer
+gewissen Obermenge~$\Omega$ gegeben.
+\begin{enumerate}
+\item Zeige: Ganz ohne weitere Voraussetzungen gilt
+\[ \bigcup_{c \in C} \bigcap_{d \in D} F_{cd} \subseteq \bigcap_{d \in D} \bigcup_{c \in C} F_{cd}.
+\]
+\item Sei nun~$C$ sogar gerichtet\footnote{Das bedeutet, dass~$C$ mindestens
+ein Element enthält und je zwei Elemente~$x,y \in C$ eine gemeinsame obere
+Schranke besitzen: ein~$z \in C$ mit~$x \preceq z$ und~$y \preceq z$.} und~$D$
+endlich. Dann gilt auch~"`$\supseteq$"'.
+\item Wer dann noch die Puste hat, kann die Aufgabe ins Unendliche eskalieren:
+Sei~$\kappa$ eine reguläre Kardinalzahl. Sei~$D$ zwar nicht endlich, aber
+gelte~$|D| < \kappa$. Sei~$C$ $\kappa$-gerichtet -- das heißt, dass je~$<
+\kappa$ viele Elemente eine gemeinsame obere Schranke besitzen. Dann gilt
+ebenfalls~"`$\supseteq$"'.
+\end{enumerate}
+
+Noch eine Bemerkung zur ursprünglichen Aufgabe: Es ist tatsächlich wichtig,
+dass der Funktor~$F$ in die Kategorie der Mengen (und nicht sonst irgendeine
+Kategorie) abbildet.
+
 \textbf{Tipp zu Aufgabe~4}. Die Rückrichtung ist etwas einfacher als die
 Hinrichtung und auch schon sehr interessant (schließlich konstruieren wir ein
 Pseudoinverses; es ist doch spannend, woher das kommt!). Verwende folgendes
