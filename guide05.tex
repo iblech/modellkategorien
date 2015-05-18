@@ -6,7 +6,10 @@
 \section*{Guide zu Übungsblatt 5}
 
 Für \textbf{Aufgabe~2} kann man folgendes filtrierte (sogar gerichtete) System
-von Räumen betrachten. Der Raum~$Y_n$ ist als Menge gleich~$X \times \NN$. Eine
+von Räumen betrachten.\footnote{Es ist entnommen aus dem schönen Buch
+\emph{Locally Presentable and Accessible Categories} von Adámek und Rosicky,
+allerdings etwas modifiziert, um es zum Laufen zu bringen.}
+Der Raum~$Y_n$ ist als Menge gleich~$X \times \NN$. Eine
 Teilmenge~$U \subseteq Y_n$ ist genau dann offen, wenn
 \begin{quote}
 für alle~$(x,m) \in U$ gilt: $m < n \Longrightarrow U = X \times \NN$.
@@ -23,6 +26,18 @@ schon gleich ganz~$X \times \NN$). (Wieso?)
 
 Die Abbildung~$X \to \colim_n Y_n$ mit~$x \mapsto (x,0)$ ist stetig (wieso?),
 faktorisiert aber über keine der Abbildungen~$Y_n \to \colim_n Y_n$ (wieso?).
+
+Du wirst nicht richtig warm mit diesem Beispiel? Dann versuche folgenden
+\textbf{alternativen Tipp zu Aufgabe~2}.\footnote{Von Marc Olschok in einer
+\href{https://golem.ph.utexas.edu/category/2009/05/journal_club_geometric_infinit_3.html\#c023818}{Diskussion
+auf dem n-Kategorien-Café}.}
+Fixiere eine nicht-offene Teilmenge~$A \subseteq X$. Wähle~$Y_n \defeq X \amalg
+\NN$ und versehe diese Menge mit folgender Topologie: Die einzigen
+nichttrivialen offenen Mengen sollen von der Form~$A \amalg \{ m \in \NN \,|\,
+m \geq k \}$ sein (mit~$k \geq n$ beliebig). Wähle als Übergangsabbildungen
+die Identitäten. Dann ist der Kolimes der indiskrete Raum auf der Menge~$X
+\amalg \NN$ und die kanonische Injektion~$X \to X \amalg \NN$ faktorisiert
+nicht über einen der Räume~$Y_n$.
 
 \textbf{Tipp zu Aufgabe~4}. Die Rückrichtung ist etwas einfacher als die
 Hinrichtung und auch schon sehr interessant (schließlich konstruieren wir ein
@@ -64,8 +79,6 @@ stets diskret, Kura\-towski-endliche Mengen im Allgemeinen aber nicht.
 Konstruktiv gibt es noch weitere Endlichkeitsbegriffe, und man kann alle auch
 so formulieren, dass sie nicht Bezug nehmen auf die (unendlich große) Menge der
 natürlichen Zahlen.
-
-\newpage
 
 \begin{aufgabe*}{Bonusaufgabe 1}{Kompakte Objekte in der Kategorie der Mengen konstruktiv}
 
