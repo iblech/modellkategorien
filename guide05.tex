@@ -5,8 +5,24 @@
 
 \section*{Guide zu Übungsblatt 5}
 
-Ein \textbf{Tipp zu Aufgabe~2} kann bei mir abgeholt werden. Eine Mail nur mit
-Betreff und ohne Inhalt genügt völlig.
+Für \textbf{Aufgabe~2} kann man folgendes filtrierte (sogar gerichtete) System
+von Räumen betrachten. Der Raum~$Y_n$ ist als Menge gleich~$X \times \NN$. Eine
+Teilmenge~$U \subseteq Y_n$ ist genau dann offen, wenn
+\begin{quote}
+für alle~$(x,m) \in U$ gilt: $m < n \Longrightarrow U = X \times \NN$.
+\end{quote}
+Eine Teilmenge~$U \subseteq Y_n$ ist also genau dann offen, wenn sie schon
+ganz~$X \times \NN$ ist oder wenn die zweiten Komponenten von allen Paaren,
+die in~$U$ enthalten sind, größer oder gleich~$n$ sind.
+
+Als Übergangsabbildungen~$Y_n \to Y_{n+1}$ dienen die (mengentheoretischen)
+Iden\-ti\-täts\-ab\-bil\-dun\-gen (wieso sind diese stetig?). Der Kolimes dieses Systems
+ist dann der indiskrete Raum auf der Menge~$X \times \NN$ (das heißt: eine
+Teilmenge~$U$ ist genau dann offen, wenn: Enthält~$U$ ein Element, so ist~$U$
+schon gleich ganz~$X \times \NN$). (Wieso?)
+
+Die Abbildung~$X \to \colim_n Y_n$ mit~$x \mapsto (x,0)$ ist stetig (wieso?),
+faktorisiert aber über keine der Abbildungen~$Y_n \to \colim_n Y_n$ (wieso?).
 
 \textbf{Tipp zu Aufgabe~4}. Die Rückrichtung ist etwas einfacher als die
 Hinrichtung und auch schon sehr interessant (schließlich konstruieren wir ein
@@ -27,7 +43,7 @@ aufzumalen, die für einen Morphismus~$f : X \to Y$ den Morphismus~$RQf$
 definieren.
 
 Zur technischen Vereinfachung der Aufgabe kann man ausnutzen, dass ohne
-Beschränkung der Allgemein~$RQX = RX$ und~$RQY = QY$ gilt; schließlich ist~$X$
+Beschränkung der Allgemeinheit~$RQX = RX$ und~$RQY = QY$ gilt; schließlich ist~$X$
 schon kofasernd und~$Y$ schon fasernd.
 
 Tipps zu \textbf{Aufgabe 5b)} können bei mir per Mail abgeholt werden!
@@ -48,6 +64,8 @@ stets diskret, Kura\-towski-endliche Mengen im Allgemeinen aber nicht.
 Konstruktiv gibt es noch weitere Endlichkeitsbegriffe, und man kann alle auch
 so formulieren, dass sie nicht Bezug nehmen auf die (unendlich große) Menge der
 natürlichen Zahlen.
+
+\newpage
 
 \begin{aufgabe*}{Bonusaufgabe 1}{Kompakte Objekte in der Kategorie der Mengen konstruktiv}
 
