@@ -1,0 +1,60 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\section*{Guide zu Übungsblatt 6}
+
+Zu \textbf{Aufgabe 2}: Mit~$\M_c$ ist die volle Unterkategorie der kofasernden
+Objekte gemeint. In der Vorlesung gab es ein ähnliches Lemma, an dessen Beweis
+man sich orientieren kann; man benötigt lediglich noch ein weiteres Argument
+vorab.
+
+Zu \textbf{Aufgabe 3}: Die Kategorie~$\M/A$ hat als Objekte
+\[ \text{Morphismen~$X \to A$ in~$\M$} \]
+und als Morphismen
+\[ \Hom_{\M/A}(X \xra{f} A,\, Y \xra{g} A) \defeq \{ h \in \Hom_\M(X,Y) \,|\,
+  g \circ h = f \}. \]
+Man muss nicht nachweisen, dass~$\M/A$ wieder eine Modellstruktur ist; das
+haben wir (in einer spezielleren Situation) schon in Aufgabe~5c) von Blatt~4
+gemacht. Ein Morphismus in~$\M/A$ ist per Definition genau dann eine schwache
+Äquivalenz, eine Kofaserung oder eine Faserung, wenn er aufgefasst als
+Morphismus in~$\M$ eine schwache Äquivalenz, eine Kofaserung bzw. eine Faserung
+ist.
+
+Für das Verständnis der Aufgabe ist die folgende Intuition nicht notwendig. Ich
+finde sie trotzdem interessant. \emph{Ein Objekt aus~$\M/A$ stellt man sich Form
+als~$A$-indizierte Familie von Objekten aus~$\M$.} Dieser Spruch ergibt formal
+keinen Sinn, denn~$A$ ist keine Menge. Die Sprache kommt vom Spezialfall~$\M =
+\Set$: Eine Abbildung~$f : X \to A$ kann man sich nämlich tatsächlich
+als~$A$-indizierte Familie von Mengen vorstellen, denn zu jedem~$a \in A$ gibt
+es die Faser~$f^{-1}[\{a\}]$. Der Vergissfunktor~$\M/A \to \M$ berechnet dann
+zu einer~$A$-indizierten Familie ihren Totalraum.
+
+Wenn du Gefallen an Homotopietyptheorie hast, dann überlege doch (im Fall~$\M =
+\Set$), ob der Vergissfunktor in eine Kette von Adjunktionen passt.
+
+Zu \textbf{Aufgabe 4}: Details und Hintergründe zu~$\PSh(\C)$ stehen auch im
+\href{http://pizzaseminar.speicherleck.de/skript1/pizzaseminar.pdf}{Skript zum ersten
+Pizzaseminar} (ab Seite~42). Die Yoneda-Einbettung~$y$ schickt ein Objekt~$X
+\in \C$ auf die Prägarbe~$\Hom_\C(\smallplaceholder, X)$. \emph{Prägarbe} ist
+in diesem Zusammenhang nur ein Synonym für \emph{Funktor von~$\C^\op$
+nach~$\Set$}. \emph{Lokal endlich-präsentierbar} bedeutet lokal
+$\aleph_0$-präsentierbar.
+
+Zu \textbf{Aufgabe 5}: Ist~$X$ irgendeine Menge, so zeigt das bekannte
+Diagonalargument von Cantor, dass die Potenzmenge~$\P(X)$ größere Mächtigkeit
+als~$X$ hat. Dadurch sieht man, dass es zu jeder Kardinalzahl eine noch größere
+gibt. Eine Nachfolgerkardinalzahl ist nun eine solche, die direkt nach einer
+anderen Kardinalzahl kommt. (Je zwei Kardinalzahlen sind gleich, größer oder
+kleiner, daher ergibt diese Definition Sinn. Die Klasse der Kardinalzahlen ist
+also total geordnet.)
+
+Schreibe also~$\kappa = \lambda^+$ -- sei~$\kappa$ also die nächste
+Kardinalzahl nach~$\lambda$. Zeige dann: Eine Vereinigung von~$\leq
+\lambda$ vielen Mengen, die jeweils~$\leq \lambda$ viele Elemente enthalten,
+enthält selbst nur~$\leq \lambda$ viele Elemente.
+
+Verwende folgendes Lemma (ohne Beweis): Ist~$\lambda$ eine unendlich große
+Kardinalzahl, so gilt~$\lambda \cdot \lambda = \lambda$.
+
+\end{document}

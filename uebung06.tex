@@ -1,10 +1,5 @@
 \documentclass{uebblatt}
 
-\usepackage{draftwatermark}                                                                       
-\definecolor{pink}{rgb}{0.95,0.9,0.95}                                                            
-\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}                                             
-\SetWatermarkScale{1}                                                                             
-
 \begin{document}
 
 \maketitle{6}{}
@@ -19,8 +14,7 @@ RX'$ zueinander rechtshomotop.
 
 \begin{aufgabe}{Ein Kriterium für Identifizierung rechtshomotoper Morphismen}
 Sei~$\M$ eine Modellkategorie und~$\C$ eine beliebige Kategorie. Sei~$F : \M_c
-\to \C$ ein Funktor, der auf der vollen Unterkategorie der kofasernden Objekte
-definiert ist und azyklische Kofaserungen auf Isomorphismen schickt.
+\to \C$ ein Funktor, der azyklische Kofaserungen auf Isomorphismen schickt.
 Zeige, dass~$F$ rechtshomotope Morphismen identifiziert.
 \end{aufgabe}
 
@@ -33,11 +27,31 @@ Sei~$M$ eine Modellkategorie. Sei~$A$ ein Objekt von~$M$. Zeige:
 \end{enumerate}
 \end{aufgabe}
 
+\begin{aufgabe}{Lokale Präsentierbarkeit von Prägarbenkategorien}
+Sei~$\C$ eine kleine Kategorie. Sei~$y : \C \hookrightarrow \PSh(\C)$ die
+Yoneda-Einbettung in die Kategorie der Funktoren~$\C^\op \to \Set$.
+Folgende Aussagen sind alle wahr. Zeige so viele
+du möchtest.
+\begin{enumerate}
+\item Die Kategorie~$\PSh(\C)$ ist kovollständig.
+\item Darstellbare Prägarben -- solche der Form~$y(X)$ für ein~$X \in \C$ --
+sind~$\aleph_0$-kompakt.
+\item Jede Prägarbe~$F$ ist ein kleiner Kolimes von darstellbaren Prägarben,
+und zwar gilt etwas genauer~$F = \colim_{s \in F(X), X \in \C} y(X)$.
+\item Die Kategorie~$\PSh(\C)$ ist lokal endlich-präsentierbar.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Regularität unendlich großer Nachfolgerkardinalzahlen}
+Sei~$\kappa$ der Nachfolger einer unendlich großen Kardinalzahl.
+Zeige, dass~$\kappa$ regulär ist.
+\end{aufgabe}
+
 \vfill
 \centering
-\href{http://spikedmath.com/182.html}{\includegraphics[height=6cm]{images/what-happens-in-math-camp}}
+\href{http://spikedmath.com/182.html}{\includegraphics[height=4.9cm]{images/what-happens-in-math-camp}}
 \quad
-\href{http://smbc-comics.com/index.php?id=1777}{\includegraphics[height=6cm]{images/memorizing-pi}}
+\href{http://smbc-comics.com/index.php?id=1777}{\includegraphics[height=4.9cm]{images/memorizing-pi}}
 \par
 
 \end{document}
