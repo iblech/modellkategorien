@@ -91,6 +91,7 @@
 \newcommand{\V}{\mathcal{V}}
 \newcommand{\W}{\mathcal{W}}
 \newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
 \renewcommand{\H}{\mathcal{H}}
 \renewcommand{\O}{\mathcal{O}}
 \newcommand{\K}{\mathcal{K}}
@@ -142,6 +143,7 @@
 \newcommand{\Met}{\mathrm{Met}}
 \newcommand{\pt}{\mathrm{pt}}
 \newcommand{\Ho}{\mathrm{Ho}}
+\newcommand{\Cof}{\mathrm{Cof}}
 \DeclareMathOperator{\Mor}{Mor}
 \DeclareMathOperator{\sk}{sk}
 \DeclareMathOperator{\Tr}{Tr}
