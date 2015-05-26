@@ -4,9 +4,61 @@
 
 \section*{Guide zu Übungsblatt 7}
 
-Verwende bei \textbf{Aufgabe ??} ohne Beweis, dass jeder nicht-diskrete Raum für keine
+Die Indexkategorie im Kolimes bei der Definition von Dichtheit in
+\textbf{Aufgabe 1} sieht wie folgt aus. Die Objekte dieser Kategorie sind
+\[ \text{Morphismen der Form~$K(m) \to c$ in~$\C$ mit~$m \in \M$ beliebig.} \]
+Die Morphismen sind
+\[ \Hom(K(m) \xra{f} c,\, K(n) \xra{g} c) \defeq
+  \{ h : m \to n \,|\, g \circ K(h) = f \}. \]
+
+Die vier Teilaufgaben von Aufgabe~1 sind voneinander unabhängig. Ich hoffe,
+dass mindestens eine gefällt! Für \textbf{Teilaufgabe~b) von Aufgabe~1}
+überlege dir gut, wie das fragliche Diagramm in diesem Fall aussieht. Skizze!
+Welche Morphismen verlaufen in diesem Diagramm?
+
+Für \textbf{Teilaufgabe~b) von Aufgabe~2} hole dir bei mir einen Tipp ab.
+Minimaltipp vorab: Retrakte haben etwas mit idempotenten Morphismen zu tun.
+Für Teilaufgabe~c) benötigt man möglicherweise die Voraussetzung, dass~$\C$
+kovollständig ist (prüfe ich noch).
+
+Verwende bei \textbf{Aufgabe 3a)} ohne Beweis, dass jeder nicht-diskrete Raum für keine
 Kardinalzahl~$\kappa$ $\kappa$-kompakt ist. In Aufgabe~2 von Blatt~5 hatten wir
 gesehen, dass nicht-diskrete Räume zumindest nicht $\aleph_0$-kompakt sind; der
 Beweis dort überträgt sich auf die allgemeinere Behauptung.
+
+Ich persönlich finde \textbf{Teilaufgabe b) von Aufgabe 3} spannender.
+Wer den Grad an benötigter Technik reduzieren möchte, kann folgende Behauptung
+beweisen.
+\begin{quote}
+Sei~$I$ eine Partialordnung.
+Sei~$(V_i)_{i \in I}$ eine monotone Familie von abgeschlossenen Unterräumen
+eines Banachraums~$V$ (\emph{monoton} heißt: $i \preceq i' \Rightarrow
+V_i \subseteq V_{i'}$).
+Sei ein Vektor aus dem topologischen Abschluss der Vereinigung der~$V_i$
+gegeben:~$x \in \overline{\bigcup_i V_i}$.
+\begin{itemize}
+\item Setze von~$I$ nur voraus, dass~$I$ gerichtet ist.
+Zeige anhand eines expliziten Gegenbeispiels, dass dann im Allgemeinen nicht
+folgt, dass~$x \in V_j$ für ein~$j \in J$.
+\item Setze nun an~$I$ voraus, dass~$I$ $\aleph_1$-gerichtet ist. (Das
+bedeutet, dass jede Teilmenge~$J \subseteq I$ mit~$|J| < \aleph_1$ eine obere
+Schranke in~$I$ besitzt.) Zeige, dass dann durchaus folgt, dass~$x \in V_j$ für
+ein~$j \in J$.
+\end{itemize}
+\end{quote}
+Die Zahl~$\aleph_1$ ist die nach~$\aleph_0$ nächstgrößere Kardinalzahl. Analog
+wie für eine Menge~$X$ genau dann~$|X| < \aleph_0$ gilt, wenn~$X$ endlich ist,
+gilt genau dann~$|X| < \aleph_1$, wenn~$X$ (endlich oder) abzählbar ist.
+
+Wer die eigentliche Aufgabe bearbeite möchte, sollte sich zunächst überlegen,
+wie filtrierte Kolimiten in der Kategorie der Banachräume und linearen
+Kontraktionen berechnet werden. (Wie ist die Norm zu definieren? Ist die eigene
+Vermutung über den Kolimes wieder vollständig?) Eine lineare Abbildung~$A$ zwischen
+Banachräumen heißt genau dann \emph{Kontraktion}, wenn~$\|Ax\| \leq \|x\|$ für
+alle~$x$ aus dem Quellraum.
+
+Übrigens: Die Kategorie der Banachräume ist zwar nicht lokal
+$\aleph_0$-präsentierbar, wohl aber lokal $\aleph_1$-präsentierbar. Das hat
+sogar eine erstaunlich einfache Begründung (siehe Übung).
 
 \end{document}

@@ -9,7 +9,40 @@
 
 \maketitle{7}{}
 
-\begin{aufgabe}{XXX}
+\begin{aufgabe}{Dichte Unterkategorien}
+Ein Funktor~$K : \M \to \C$ heißt genau dann \emph{dicht}, wenn jedes Objekt~$c
+\in \C$ Kolimes von Objekten der Form~$K(m)$ ist -- und zwar nicht irgendwie,
+sondern auf die kanonische Art und Weise~$c = \colim_{K(m) \to c} K(m)$.
+\begin{enumerate}
+\item Zeige: Die Inklusion~$\{\{\heartsuit\}\} \to \Set$ der vollen
+Unterkategorie von~$\Set$, welche nur das Objekt~$\{\heartsuit\}$ enthält, ist
+dicht.
+\item Zeige: Die Inklusion~$\{\RR\} \to \Set$ der vollen
+Unterkategorie von~$\mathrm{Vect}(\RR)$, welche nur das Objekt~$\RR$ enthält, ist
+nicht dicht.
+\item Zeige: Für jede Kategorie~$\C$ ist die Yoneda-Einbettung~$y : \C \to
+\PSh(\C)$ dicht.
+\item Zeige, dass ein Funktor~$K : \M \to \C$ genau dann dicht ist,
+wenn~$(\Id_\C,\,\id_K)$ eine punktweise Rechts-Kan-Erweiterung von~$K$
+längs~$K$ ist.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Dichtheit der kompakten Objekte}
+\emph{In etwa so, wird aber noch verfeinert.}
+Sei~$S$ eine Menge $\kappa$-kompakter Objekten einer Kategorie~$\C$, 
+sodass jedes Objekt aus~$\C$ $\kappa$-filtrierter Kolimes von Objekten aus~$S$
+ist.
+\begin{enumerate}
+\item Zeige: Ein Objekt aus~$\C$ ist genau dann~$\kappa$-kompakt, wenn es
+Retrakt von einem Objekt aus~$S$ ist.
+\item Sei~$\alpha$ eine reguläre Kardinalzahl mit~$|S| < \alpha$
+und~$|\Hom_\C(X,X)| < \alpha$ für alle~$X \in S$. Zeige, dass es~$< \alpha$
+viele Isomorphieklassen von~$\kappa$-kompakten Objekten in~$\C$
+gibt.
+\item Zeige, dass die volle Unterkategorie der~$\kappa$-kompakten Objekte in~$\C$ dicht
+in~$\C$ liegt.
+\end{enumerate}
 %\alpha reguläre Kardinalzahl, C lokal-präsentierbare Kategorie und G in C
 %\alpha-kleine Menge von \alpha-kleinen Objekten, so daß jedes Objekt in C
 %Kolimes über G ist. (Hierbei ist eine \alpha-kleine Menge eine mit
@@ -20,16 +53,35 @@
 %3. Zeige: Jedes Objekt aus C ist \alpha-filtrierter Kolimes über H.
 \end{aufgabe}
 
-\begin{aufgabe}{Nichtpräsentierbarkeit der Kategorie der topologischen Räume}
-Zeige, dass die Kategorie der topologischen Räume nicht lokal präsentierbar
+\begin{aufgabe}{Beispiele für nicht (endlich-)präsentierbare Kategorien}
+\begin{enumerate}
+\item Zeige, dass die Kategorie der topologischen Räume nicht lokal präsentierbar
 ist.
+\item Zeige, dass in der Kategorie der Banachräume und linearen Kontraktionen
+das Objekt~$\RR$ nicht~$\aleph_0$-kompakt, aber~$\aleph_1$-kompakt ist.
+\end{enumerate}
 \end{aufgabe}
 
 \begin{aufgabe}{Quillen-Adjunktionen auf Niveau der Homotopiekategorien}
-Prop. 16.2.3 aus May/Ponto.
+Sei~$F \dashv U$ eine Quillen-Adjunktion. Zeige, dass
+die folgenden Aussagen äquivalent sind:
+\begin{itemize}
+\item[1.] $F \dashv U$ ist eine Quillen-Äquivalenz.
+\item[2.] $\LL F \dashv \RR U$ ist eine Äquivalenz der Homotopiekategorien.
+\item[3.] $F$ bewahrt schwache Äquivalenzen zwischen kofasernden Objekten und
+für alle fasernden Objekte~$Y$ ist~$FQUY \to FUY \xra{\varepsilon} Y$ eine schwache
+Äquivalenz.
+\item[4.] $U$ bewahrt schwache Äquivalenzen zwischen fasernden Objekten und
+für alle kofasernden Objekte~$X$ ist~$X \xra{\eta} UFX \to URFX$ eine schwache
+Äquivalenz.
+\end{itemize}
 \end{aufgabe}
+\enlargethispage{1.2cm}
+
+\centering
+\includegraphics[height=2.8cm]{images/mmh-adjunctions-cookie-monster}
+\par
 
 \end{document}
 
 Aufgaben zu abgeleiteten Funktoren
-evtl. separat: Dichtheit und Kan-Erweiterungen, kanonischer Kolimes in lok. präs. Kategorien
