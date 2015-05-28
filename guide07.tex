@@ -25,6 +25,12 @@ welche eine natürliche Transformation~$\eta$ auf~$\eta_A(\id_A)$ schickt, eine
 Bijektion. Außerdem ist diese Abbildung natürlich in~$A$ und~$F$.
 \end{quote}
 
+Verwende für \textbf{Teilaufgabe~d) von Aufgabe~1} unbedingt die Kolimesformel
+für die punktweise Links-Kan-Erweiterung; mit der ist die Lösung in wenigen
+Zeilen machbar, ohne sie wird die Aufgabe deutlich komplizierter. Die Formel
+lautet:
+\[ (\mathrm{Lan}_K(T))(c) = \colim_{f:K(m) \to c} T(m). \]
+
 Für \textbf{Teilaufgabe~b) von Aufgabe~2} hole dir bei mir einen Tipp ab.
 Minimaltipp vorab: Retrakte haben etwas mit idempotenten Morphismen zu tun.
 Für Teilaufgabe~c) benötigt man möglicherweise die Voraussetzung, dass~$\C$
@@ -62,12 +68,21 @@ gilt genau dann~$|X| < \aleph_1$, wenn~$X$ (endlich oder) abzählbar ist.
 Wer die eigentliche Aufgabe bearbeite möchte, sollte sich zunächst überlegen,
 wie filtrierte Kolimiten in der Kategorie der Banachräume und linearen
 Kontraktionen berechnet werden. (Wie ist die Norm zu definieren? Ist die eigene
-Vermutung über den Kolimes wieder vollständig?) Eine lineare Abbildung~$A$ zwischen
+Vermutung über den Kolimes wieder vollständig?) Außerdem sollte man bedenken,
+dass~$\Hom(\RR,\smallplaceholder)$ in dieser Kategorie \emph{nicht} die
+zugrundeliegende Menge, sondern den zugrundeliegenden (abgeschlossenen)
+Einheitsball berechnet. Eine lineare Abbildung~$A$ zwischen
 Banachräumen heißt genau dann \emph{Kontraktion}, wenn~$\|Ax\| \leq \|x\|$ für
 alle~$x$ aus dem Quellraum.
 
 Übrigens: Die Kategorie der Banachräume ist zwar nicht lokal
 $\aleph_0$-präsentierbar, wohl aber lokal $\aleph_1$-präsentierbar. Das hat
 sogar eine erstaunlich einfache Begründung (siehe Übung).
+
+Zu \textbf{Aufgabe~4} ist zu bemerken, dass per Definition ein Funktor~$F$
+genau dann schwache Äquivalenzen \emph{reflektiert}, wenn folgendes gilt: Wann
+immer~$F(f)$ eine schwache Äquivalenz ist, ist schon~$f$ eine schwache
+Äquivalenz. Die Morphismen~$\eta$ und~$\varepsilon$ aus den letzten zwei
+Bedingungen stammen von der Eins bzw. Koeins der Adjunktion.
 
 \end{document}
