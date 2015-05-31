@@ -31,10 +31,33 @@ Zeilen machbar, ohne sie wird die Aufgabe deutlich komplizierter. Die Formel
 lautet:
 \[ (\mathrm{Lan}_K(T))(c) = \colim_{f:K(m) \to c} T(m). \]
 
-Für \textbf{Teilaufgabe~b) von Aufgabe~2} hole dir bei mir einen Tipp ab.
-Minimaltipp vorab: Retrakte haben etwas mit idempotenten Morphismen zu tun.
-Für Teilaufgabe~c) benötigt man möglicherweise die Voraussetzung, dass~$\C$
-kovollständig ist (prüfe ich noch).
+Verwende für die Hinrichtung in \textbf{Teilaufgabe~a) von Aufgabe~2} einfach
+die Definition von~$\kappa$-Kompaktheit und die Voraussetzung. Verwende für die
+Rückrichtung folgende zwei Aussagen: $\kappa$-kleine Kolimiten (insbesondere
+endliche Kolimiten) von $\kappa$-kompakten Objekten sind~$\kappa$-kompakt, und
+Retrakte können stets als Kolimiten geschrieben werden (wenn~$f \circ g = \id :
+U \to U$, dann ist~$U$ Kolimes der Diagrams~$X \rightrightarrows X$, wobei der
+eine Morphismus die Identität und der andere~$g \circ f$ ist).
+
+Hole dir für \textbf{Teilaufgabe~b) von Aufgabe~2} bei mir einen Tipp ab.
+Minimaltipp vorab: Retrakte haben etwas mit idempotenten Morphismen zu tun;
+sie werden durch solche klassifiziert. Der Morphismus~$g \circ f$ aus dem
+vorherigen Absatz ist ein solcher idempotenter Morphismus.
+
+Tipp für \textbf{Teilaufgabe~c) von Aufgabe~2}: Es ist zu zeigen, dass der
+Inklusionsfunktor von der vollen Unterkategorie der $\kappa$-kompakten Objekte
+in die Kategorie~$\C$ dicht ist. Ist~$X \in \C$ ein beliebiges Objekt, so gibt
+es nach Voraussetzung ein Diagramm (d.\,h. einen Funktor)~$F : \I \to \C$
+mit~$\kappa$-filtrierter Quellkategorie~$I$ und $F(i) \in S$ für alle~$i \in \I$
+sodass~$X = \colim F$. Zum Vergleich haben wir das kanonische Diagramm~$G :
+(\C_{\kappa c}/X) \to \C$, wobei~$\C_{\kappa c}/X$ die Kategorie der
+$\kappa$-kompakten Objekte über~$X$ bezeichnet. Nach Definition von Dichtheit
+ist zu zeigen, dass~$X = \colim G$. Versuche dazu, eine Beziehung zwischen~$\I$
+und~$\C_{\kappa c}/X$ herzuleiten! Findest du einen Funktor~$\I \to \C_{\kappa
+c}/X$? Wenn ja, bist du fast fertig; mit Proposition~5.39 ("`Kolimiten
+kofinaler Unterdiagramme"') aus dem
+\href{http://pizzaseminar.speicherleck.de/skript1/pizzaseminar.pdf}{Skript zum
+ersten Pizzaseminar} folgt sofort die Behauptung.
 
 Verwende bei \textbf{Aufgabe 3a)} ohne Beweis, dass jeder nicht-diskrete Raum für keine
 Kardinalzahl~$\kappa$ $\kappa$-kompakt ist. In Aufgabe~2 von Blatt~5 hatten wir
