@@ -1,0 +1,78 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\section*{Guide zu Übungsblatt 9}
+
+\section*{Erzeuger und Relationen in der Algebra}
+
+Gruppen oder Moduln spezifiert man gelegentlich durch Angabe von
+\emph{Erzeugern} und \emph{Relationen} zwischen diesen Erzeugern.
+
+\begin{itemize}
+\item Die additive Gruppe der ganzen Zahlen ist die von einem Erzeuger frei
+erzeugte Gruppe:~$\ZZ = \langle x \rangle$.
+\item Der additive Monoid der natürlichen Zahlen ist der von einem Erzeuger
+frei erzeugte Monoid:~$\NN = \langle x \rangle$.
+\item Die Gruppe~$\ZZ/(2)$ ist die von einem Erzeuger~$x$, modulo der
+Relation~$x \circ x = e$ (neutrales Element), erzeugte Gruppe:~$\ZZ/(2) =
+\langle x \,|\, x \circ x = e \rangle$.
+\item Die Dieder-Gruppe~$D_n$ ist durch zwei Erzeuger und eine Relation
+erzeugt:~$D_n = \langle r,s \,|\, r^n = e, srs = r^{-1} \rangle$.
+\item Das Tensorprodukt~$M \otimes_A N$ kann wie folgt präsentiert werden:~$M
+\otimes_A N = \langle (x,y) \,|\, x \in M, y \in N, (x,y_1+y_2) =
+(x,y_1)+(x,y_2), \ldots \rangle$.
+\end{itemize}
+
+Ist ein algebraisches Objekt~$X$ durch Erzeuger und Relationen gegeben, so kann
+man Morphismen in ein weiteres Objekt~$Y$ einfach dadurch spezifizieren, indem
+man für jeden Erzeuger von~$X$ jeweils ein gewisses Element von~$Y$ als Bild
+vorgibt und darauf achtet, dass diese Bilder die gegebenen Relationen erfüllen.
+
+Außerdem kann man ein und dieselbe Präsentation durch Erzeuger und Relationen
+in verschiedenen Kontexten interpretieren. Etwa ist~$\langle x,y \rangle$ in
+der Kategorie der Gruppen die von zwei Elementen frei erzeugte Gruppe~$\ZZ
+\star \ZZ$. Dieselbe Präsentation führt in der Kategorie der abelschen Gruppen
+zur abelschen Gruppe~$\ZZ^2$.
+
+
+\section*{Erzeugnisse als Kolimiten}
+
+In jeder Kategorie algebraischer Objekte kann man die Erzeugnisse von
+Präsentationen als gewisse Kolimiten charakterisieren. Sei~$\ul{n}$ das von~$n$
+Erzeugern~$e_1,\ldots,e_n$ ohne Relationen erzeugte Objekt: in~$\Grp$ also~$\ZZ
+\star \cdots \star \ZZ$, in~$\Ab$ ist es~$\ZZ^n$, in~$\mathrm{Mod}(R)$ ist
+es~$R^n$. In~$\Set$ is es irgendeine~$n$-elementige Menge.
+
+\begin{itemize}
+\item $\ZZ \star \ZZ$ ist in der Kategorie der Gruppen der Kolimes des
+folgenden Diagramms:
+\[ \ul{1} \qquad \ul{1} \]
+\item $\langle x,y,z \,|\, 2x = 3y \rangle$ ist in der Kategorie der abelschen
+Gruppen der Kolimes des folgenden Diagramms:
+\[ \xymatrix{
+  \ul{1} \ar[rd]_{e_1 \mapsto e_1} && \ul{1} \ar[ld]^{e_1 \mapsto e_2} & \ul{1} \\
+  & \ul{2} \\
+  & \ul{1} \ar@/^/[u]^{e_1 \mapsto 2e_1} \ar@/_/[u]_{e_1 \mapsto 3e_2}
+} \]
+Kleinere Diagramme sind ebenfalls möglich (etwa~$\ul{1} \to \ul{2} \quad
+\ul{1}$), aber weniger systematisch.
+\end{itemize}
+
+Die allgemeine Regel lautet also wie folgt:
+\begin{itemize}
+\item Für jeden Erzeuger~$x$ platziert man eine Kopie von~$\ul{1}$ im
+Diagramm:~$\ul{1}_x$.
+\item Für jede Relation~$r$ der Form~$t_1(a_1,\ldots,a_n) =
+t_2(a_1,\ldots,a_n)$ platziert man eine Kopie von~$\ul{n}$,
+notiert~$\ul{n}_r$; eine Kopie von~$\ul{1}$, notiert~$\ul{1}^r$; und
+folgende Morphismen:
+
+Für~$i=1,\ldots,n$ einen Morphismus~$\ul{1}_{a_i} \to \ul{n}_r$, der
+den Erzeuger von~$\ul{1}_{a_i}$ auf~$e_i$ schickt; einen
+Morphismus~$\ul{1}^r \to \ul{n}_r$, der den Erzeuger von~$\ul{1}^r$
+auf~$t_1(e_1,\ldots,e_n)$ schickt; einen Morphismus~$\ul{1}^r \to \ul{n}_r$,
+der den Erzeuger von~$\ul{1}^r$ auf~$t_2(e_1,\ldots,e_n)$.
+\end{itemize}
+
+\end{document}
