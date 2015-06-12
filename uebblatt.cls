@@ -104,6 +104,7 @@
 \newcommand{\QQ}{\mathbb{Q}}
 \newcommand{\CC}{\mathbb{C}}
 \newcommand{\GG}{\mathbb{G}}
+\renewcommand{\SS}{\mathbb{S}}
 \newcommand{\aaa}{\mathfrak{a}}
 \newcommand{\bbb}{\mathfrak{b}}
 \newcommand{\ppp}{\mathfrak{p}}
@@ -157,6 +158,7 @@
 \DeclareMathOperator{\Coker}{coker}
 \DeclareMathOperator{\Image}{im}
 \DeclareMathOperator{\Ob}{Ob}
+\DeclareMathOperator{\Sing}{Sing}
 \newcommand{\Open}{\mathrm{Op}}
 \newcommand{\?}{\,{:}\,}
 \renewcommand{\_}{\mathpunct{.}\,}

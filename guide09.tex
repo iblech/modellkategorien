@@ -4,6 +4,84 @@
 
 \section*{Guide zu Übungsblatt 9}
 
+Zu \textbf{Aufgabe 2} folgt weiter unten eine ausführliche Erklärung. Die
+Aufgabe soll euch damit vertraut machen, wie man simpliziale Mengen durch
+Erzeuger und Relationen angeben kann. Das ist wichtig, denn wenn man Bilder von
+simplizialen Mengen malt, macht man das implizit! Schließlich zeichnet niemand
+die Unmengen an nichtdegenerierten Simplizes dazu.
+
+Zu \textbf{Aufgabe 3}: Das \emph{$n$-Skelett}~$\sk_n X$ einer simplizialen
+Menge~$X$ ist die simpliziale (Unter-)Menge mit
+\[ (\sk_n X)_p \defeq \{ x \in X_p \,|\,
+  \exists q \leq n,\, f : [p] \to [q],\, y \in X_q{:}\ 
+  x = X(f)y \} \subseteq X_p. \]
+Die Wirkung auf monotone Abbildungen~$g$, also~$(\sk_n X)(g)$, definiert man als
+Einschränkung der Abbildung~$X(g)$.
+
+Anschaulich entsteht das~$n$-Skelett einer simplizialen Menge indem man nur die
+Simplizes in Graden~$\leq n$ behält. Im wörtlichen Sinn ist das nicht ganz
+wahr, denn das~$n$-Skelett enthält trotzdem auch Simplizes beliebig hoher
+Dimension; diese sind aber Degenerationen von Simplizes der Dimension~$\leq n$.
+
+Die simpliziale Menge~$\SS^{n-1}$ diejenige simpliziale Untermenge
+von~$\Delta[n]$, der das eindeutig bestimmte nichtdegenerierte~$n$-Simplex
+fehlt:
+\[ \SS^{n-1}_m \defeq \{ f : [m] \to [n] \,|\,
+  \text{$f$ ist monoton und nicht surjektiv} \} \subseteq \Delta[n]_m. \]
+Anschaulich ist~$\SS^{n-1}$ eine simpliziale Version der~$(n-1)$-Sphäre.
+
+Das \emph{Koprodukt} (disjunkt-gemachte Vereinigung) von simplizialen Mengen
+wird einfach levelweise berechnet. Daher gilt
+\[ \Bigl(\coprod_{x \in I} \SS^{n-1}\Bigr)_m =
+  \coprod_{x \in I} \SS^{n-1}_m =
+  \{ (x, f) \,|\, x \in I,\ f \in \SS^{n-1}_m \}. \]
+
+Zu \textbf{Teilaufgabe 3a)}: Grüße Yoneda von mir, wenn ihr diese Teilaufgabe
+bearbeitet!
+
+Zu \textbf{Teilaufgabe 3c)}: Mit~$X_{(n)} \subseteq X_n$ bezeichnen wir die
+Menge der nichtdenerierten~$n$-Simplizes. Dabei heißt ein~$n$-Simplex~$x
+\in X_n$ genau dann \emph{nichtdegeneriert}, wenn es eine \emph{keine} surjektive monotone
+Abbildung~$f : [n] \to [m]$ derart gibt, dass~$m < n$ und dass~$x = X(f)(y)$ für ein~$y
+\in X_m$. Wenn dir das hilft, dann verwende folgende grundlegende Beobachtungen
+(die du keinesfalls beweisen musst):
+\begin{enumerate}
+\item Jede monotone Abbildung lässt sich faktorisieren in einer surjektive
+monotone Abbildung gefolgt von einer injektiven monotonen Abbildung.
+\item Ein~$n$-Simplex~$x \in X_n$ ist genau dann nichtdegeneriert, wenn aus~$x
+= X(f)y$ für eine monotone Abbildung~$f : [n] \to [m]$ und~$y \in X_m$ folgt,
+dass~$f$ injektiv ist.
+\item Für jedes~$n$-Simplex~$x \in X_n$ gibt es ein eindeutiges Paar~$(f,y)$
+bestehend aus einem nichtdegenerierten Simplex~$y \in X_m$ und einer
+surjektiven monotonen Abbildung~$f : [n] \to [m]$ mit~$n = X(f)y$.
+\end{enumerate}
+
+Das Pushout-Diagramm drückt aus, dass sich das~$n$-Skelett einer simplizialen
+Menge aus ihrem~$(n-1)$-Skelett durch Einkleben der
+nichtdegenerierten~$n$-Simplizes ergibt.
+
+Um die universelle Eigenschaft nachzuweisen, kann folgender Tipp hilfreich
+sein. Ein Simplex~$x \in (\sk_n X)_m$ lässt sich auf eindeutige Art und
+Weise in der Form~$x = X(f)u$ schreiben, wobei~$f : [m] \to [\ell]$ eine
+Surjektion,~$u \in X_\ell$ nichtdegeneriert und~$\ell \leq n$ ist. Es genügt
+schon, die gesuchte Abbildung auf den nichtdegenerierten Simplizes von~$\sk_n
+X$ zu definieren -- die restlichen Werte sind durch das Axiom an simpliziale
+Abbildungen schon festgelegt (inwiefern?).
+
+Zu \textbf{Aufgabe 4}: Ein \emph{innerer Kan-Komplex} ist eine simpliziale
+Menge, in der sich alle \emph{inneren} Hörner füllen lassen. Jeder Kan-Komplex
+ist auch ein innerer Kan-Komplex, aber nicht umgekehrt. Ihr könnt euch über
+diese Aufgabe freuen, liefert sie doch ein Beispiel -- vielleicht das erste,
+das ihr seht -- für eine~$(\infty,1)$-Kategorie!
+
+Wenn du Schwierigkeiten hast, dir herzuleiten, wie der Morphismenanteil
+von~$N\C$ aussieht, dann googel oder schreib mir eine Mail!
+
+Die zu einem topologischen Raum~$Y$ gehörige simpliziale Menge~$\Sing Y$ hat
+als~$n$-Simplizes die stetigen Abbildungen~$\Delta^n \to Y$. Dabei
+ist~$\Delta^n \subseteq \RR^{n+1}$ das topologische Standard-$n$-Simplex.
+
+
 \section*{Erzeuger und Relationen in der Algebra}
 
 Gruppen oder Moduln spezifiert man gelegentlich durch Angabe von
@@ -74,5 +152,10 @@ Morphismus~$\ul{1}^r \to \ul{n}_r$, der den Erzeuger von~$\ul{1}^r$
 auf~$t_1(e_1,\ldots,e_n)$ schickt; einen Morphismus~$\ul{1}^r \to \ul{n}_r$,
 der den Erzeuger von~$\ul{1}^r$ auf~$t_2(e_1,\ldots,e_n)$.
 \end{itemize}
+
+
+\section*{Erzeuger und Relationen für simpliziale Mengen}
+
+\emph{Kommt noch.}
 
 \end{document}
