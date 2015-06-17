@@ -1,0 +1,53 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\section*{Guide zu Übungsblatt 10}
+
+Für \textbf{Aufgabe 1} muss man in Teilaufgabe~b) wissen, was eine simpliziale
+Gruppe ist. Dazu gibt es drei äquivalente Definitionen; am praktischsten ist
+vermutlich die erste:
+\begin{enumerate}
+\item Eine simpliziale Gruppe ist wie eine simpliziale Menge, nur dass man auf
+den Simplexmengen~$X_n$ noch jeweils eine Gruppenstruktur hat und dass die
+Abbildungen~$X(f) : X_m \to X_n$ für~$f : [n] \to [m]$ alle
+Gruppenhomomorphismen sind.
+\item Eine simpliziale Gruppe ist ein Funktor~$\Delta^\op \to \Set$ zusammen
+mit der Angabe einer Faktorisierung über den Vergissfunktor~$\Grp \to \Set$.
+\item Eine simpliziale Gruppe ist ein Gruppenobjekt in der Kategorie der
+simplizialen Mengen.
+\end{enumerate}
+
+Außerdem kommt in Teilaufgabe~c) die simpliziale Menge~$BG$ vor. Kurz und knapp
+definiert ist diese nichts anderes als der Nerv (siehe Blatt~9) der von~$G$
+induzierten Kategorie (diese hat genau ein Objekt, nämlich~$\star$, und für
+jedes Gruppenelement einen Morphismus~$\star \to \star$). Ganz explizit gilt
+also~$(BG)_n = G^n$. Achtung, Falle: Die simpliziale Menge~$BG$ kann genau dann
+mit einer Gruppenstruktur versehen werden, wenn~$G$ abelsch ist. Teilaufgabe~c)
+folgt also nicht aus~b).
+
+Wenn ihr Indexschlachten vermeiden möchtet, beweist in den Teilaufgaben~b)
+und~c) nur die Fälle niedriger Dimension.
+
+\textbf{Aufgabe 2} hat etwas mit Kan-Erweiterungen zu tun. Wenn du den
+Zusammenhang herausgefunden hast, kannst du die Limes- bzw. Kolimesformel
+verwenden, um die gesuchten Funktoren zumindest formal hinzuschreiben; dann
+sollte die Darstellung nur noch vereinfacht werden. Auch, wenn man keine
+Formeln findet, ist Teilaufgabe~d) machbar.
+
+Wer Fan von Enden und Koenden ist, kann auch folgende Formeln verwenden:
+\[ \mathrm{Lan}_K(T)(c) = \int^m \Hom_\C(Km,c) \cdot Tm \qquad
+  \mathrm{Ran}_K(T)(c) = \int_m (Tm)^{\Hom_\C(c,Km)}. \]
+Wer dagegen Kan-Erweiterungen nicht mag, kann die Aufgabe natürlich auch
+ohne sie bearbeiten. Ihr könnt es auch dabei belassen, Links- und
+Rechtsadjungierte zum Funktor~$\sSet_{\leq N+1} \to \sSet_{\leq n}$ zu finden;
+das ist technisch einfacher und enthält auch schon den eigentlichen Inhalt
+dieser Aufgabe.
+
+In \textbf{Aufgabe 3} ist~$|X|$ die geometrische Realisierung von~$X$
+und~$\pi_0(|X|)$ die Menge ihrer Wegzusammenhangskomponenten, also die Menge
+der Punkte von~$|X|$ modulo der Äquivalenzrelation, die genau dann zwei Punkte
+miteinander identifiziert, wenn sie durch einen stetigen Weg verbunden werden
+können.
+
+\end{document}

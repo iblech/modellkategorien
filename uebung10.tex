@@ -1,0 +1,43 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\maketitle{10}{}
+
+\begin{aufgabe}{Der klassifizierende Raum einer Gruppe}
+\begin{enumerate}
+\item Zeige, dass eine simpliziale Menge~$X$ genau dann ein Kan-Komplex ist,
+wenn für alle Zahlen~$n \geq 0$ und~$k$ mit~$0 \leq k \leq n + 1$ folgende Bedingung erfüllt ist:
+\begin{quote}Sind Simplizes~$x_0,\ldots,x_{k-1},x_{k+1},\ldots,x_{n+1} \in X_n$
+mit~$d_i x_j = d_{j-1} x_i$ für alle~$i < j$ (wobei~$i$ und~$j$ ungleich~$k$)
+vorgegeben, so existiert ein Simplex~$y \in X_{n+1}$ mit~$d_i(y) = x_i$ für
+alle~$i \neq k$.\end{quote}
+\item Zeige, dass jede simpliziale Gruppe ein Kan-Komplex ist.
+\item Sei~$G$ eine Gruppe. Zeige, dass~$BG$ ein Kan-Komplex ist.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Skelett und Koskelett}
+Die Kategorie~$\sSet_{\leq n}$ der~\emph{$n$-abgeschnittenen simplizialen Mengen}
+ist die Kategorie der Funktoren~$\Delta_{\leq n}^\op \to \Set$,
+wobei~$\Delta_{\leq n}$ die volle Unterkategorie von~$\Delta$ der
+Objekte~$[0],\ldots,[n]$ ist.
+\begin{enumerate}
+\item Welchen kanonischen Funktor~$\sSet \to \sSet_{\leq n}$ gibt es?
+\item Finde einen Linksadjungierten zu dem Funktor aus~a).
+\item Finde einen Rechtsadjungierten zu dem Funktor aus~a).
+\item Deute die Funktoren aus~b) und~c) geometrisch.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Wegzusammenhangskomponenten}
+Sei~$X$ eine simpliziale Menge. Finde einen kanonischen Isomorphismus~$\pi_0(X)
+\to \pi_0(|X|)$.
+\end{aufgabe}
+
+\vfill
+\centering
+\href{http://www.anodynegame.com/}{\includegraphics[scale=0.85]{images/anodyne}}
+\par
+
+\end{document}
