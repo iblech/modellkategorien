@@ -1,5 +1,10 @@
 \documentclass{uebblatt}
 
+\usepackage{draftwatermark}                                                                          
+\definecolor{pink}{rgb}{0.95,0.9,0.95}                                                               
+\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}                                                
+\SetWatermarkScale{1}                                                                                
+
 \begin{document}
 
 \maketitle{11}{}
@@ -28,8 +33,20 @@ Homotopiepushout und der gewöhnliche Pushout übereinstimmen.
 
 \begin{aufgabe}{Anodynizität von Kofaserungen}
 Zeige: Eine Kofaserung zwischen simplizialen Mengen (bezüglich der
-Quillen-Modellstruktur) ist genau dann anodyn, wenn sie eine schwache
+Quil\-len-Mo\-dell\-struk\-tur) ist genau dann anodyn, wenn sie eine schwache
 Äquivalenz ist.
+\end{aufgabe}
+
+\begin{aufgabe}{Fundamentalgruppe der eindimensionalen Sphäre}
+Berechne~$\pi_1(\SS^1)$.
+\end{aufgabe}
+
+\begin{aufgabe}{Erzeugnis unter beliebigen vs. filtrierten Kolimiten}
+Sei~$S$ eine Menge~$\kappa$-kompakter Objekte in einer kovollständigen
+Kategorie~$\C$. Sei jedes Objekt aus~$\C$ kleiner Kolimes von Objekten aus~$S$.
+Zeige, dass jedes Objekt aus~$\C$ dann ein~\emph{$\kappa$-fil\-trierter} Kolimes
+von Objekten aus~$\overline{S}$ ist, wobei~$\overline{S}$ der Abschluss von~$S$
+unter~$\kappa$-kleinen Kolimiten ist.
 \end{aufgabe}
 
 \end{document}
@@ -37,4 +54,3 @@ Quillen-Modellstruktur) ist genau dann anodyn, wenn sie eine schwache
 * http://ncatlab.org/nlab/show/subdivision
 * Abschnitt 1.8 aus Joyal/Tierney
 * Kovervollständigung und so weiter
-* pi_1(S^1)
