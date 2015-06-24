@@ -1,9 +1,11 @@
 \documentclass{uebblatt}
 
-\usepackage{draftwatermark}                                                                          
-\definecolor{pink}{rgb}{0.95,0.9,0.95}                                                               
-\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}                                                
-\SetWatermarkScale{1}                                                                                
+\usepackage{draftwatermark}
+\definecolor{pink}{rgb}{0.95,0.9,0.95}
+\SetWatermarkText{\textsf{\textcolor{pink}{ENTWURF}}}
+\SetWatermarkScale{1}
+
+\DeclareMathOperator{\sd}{sd}
 
 \begin{document}
 
@@ -31,6 +33,21 @@ Homotopiepushout und der gewöhnliche Pushout übereinstimmen.
 \end{enumerate}
 \end{aufgabe}
 
+\begin{aufgabe}{Fasernder Ersatz durch baryzentrische Unterteilung und Erweiterung}
+Die \emph{baryzentrische Unterteilung}~$\sd \Delta[n]$ von~$\Delta[n]$ ist der
+Nerv der Partialordnung der nichtdegenerierten Simplizes von~$\Delta[n]$. Wir
+definieren einen Funktor~$\mathrm{Ex} : \sSet \to \sSet$
+durch~$\mathrm{Ex}(X)_n \defeq \Hom_\sSet(\sd \Delta[n], X)$.
+\begin{enumerate}
+\item Wie sehen~$\sd \Delta[1]$ und~$\sd \Delta[2]$ aus?
+\item Gib den kanonischen Morphismus~$j_X : X \to \mathrm{Ex}(X)$ an.
+\item Zeige, dass sich alle Hörner von~$\mathrm{Ex}(X)$ in~$\mathrm{Ex}^2(X)$
+füllen lassen.
+\item Folgere, dass der Kolimes von~$X \to \mathrm{Ex}(X) \to
+\mathrm{Ex}^2(X) \to \cdots$ ein Kan-Komplex ist.
+\end{enumerate}
+\end{aufgabe}
+
 \begin{aufgabe}{Anodynizität von Kofaserungen}
 Zeige: Eine Kofaserung zwischen simplizialen Mengen (bezüglich der
 Quil\-len-Mo\-dell\-struk\-tur) ist genau dann anodyn, wenn sie eine schwache
@@ -49,8 +66,11 @@ von Objekten aus~$\overline{S}$ ist, wobei~$\overline{S}$ der Abschluss von~$S$
 unter~$\kappa$-kleinen Kolimiten ist.
 \end{aufgabe}
 
+\centering
+\href{http://www.4teachers.de/?action=keywordsearch&searchtype=images&searchstring=Kinder%C3%BCberraschung}{\includegraphics[scale=0.25]{images/ueberraschungsei}}
+\par
+
 \end{document}
 
-* http://ncatlab.org/nlab/show/subdivision
 * Abschnitt 1.8 aus Joyal/Tierney
 * Kovervollständigung und so weiter
