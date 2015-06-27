@@ -1,0 +1,44 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\maketitle{12}{}
+
+\begin{aufgabe}{Schwache Äquivalenzen zwischen simplizialen Mengen}
+Sei~$f : X \to Y$ ein Morphismus simplizialer Mengen. Seien~$X \to
+\overline{X}$ und~$Y \to \overline{Y}$ anodyne Erweiterungen,
+wobei~$\overline{X}$ und~$\overline{Y}$ Kan-Komplexe sind. Zeige, dass~$f$
+genau dann eine schwache Äquivalenz ist, wenn ein Lift~$\overline{f} :
+\overline{X} \to \overline{Y}$ von~$f$ eine Homotopieäquivalenz ist.
+\end{aufgabe}
+
+\begin{aufgabe}{Modelle für den Einheitskreis}
+Zeige oder widerlege: Die simpliziale Menge~$\SS^1$ (eine Untermenge
+von~$\Delta[2]$) und der Quotient~$\Delta[1]/{\sim}$ aus Blatt~9, Aufgabe~2c)
+sind zueinander homotopieäquivalent.
+\end{aufgabe}
+
+\begin{aufgabe}{Die lange exakte Sequenz von Homotopiegruppen}
+Für einen Kan-Komplex~$X$ und einen Basispunkt~$x \in X_0$ ist die~\emph{$n$-te
+Homotopiegruppe}~$\pi_n(X,x)$ die Menge der Homotopieklassen von
+Morphismen~$\Delta[n]/\partial \Delta[n] \to X$.
+\begin{enumerate}
+\item Sei~$p : E \to X$ eine Kan-Faserung,~$F \defeq p^{-1}[x]$ die Faser
+über~$x$ und~$e \in F_0$ ein Punkt. Verwende die Rechtshochhebungseigenschaft
+von~$p$ bezüglich der Inklusion~$\Lambda^0[n] \to \Delta[n]$, um eine
+Abbildung~$\delta : \pi_n(X,x) \to \pi_{n-1}(F,e)$ zu konstruieren.
+\item Zeige, dass folgende Sequenz punktierter Mengen exakt ist.
+\[ \cdots \to \pi_n(F,e) \to \pi_n(E,e) \to \pi_n(X,x) \xra{\partial}
+\pi_{n-1}(F,e) \to \cdots \to \pi_0(F) \to \pi_0(E) \to \pi_0(X) \]
+\end{enumerate}
+\end{aufgabe}
+\vspace{-1em}
+
+\begin{aufgabe}{Das Theorem von Whitehead für Kan-Komplexe}
+Sei~$f : X \to Y$ ein Morphismus von Kan-Komplexen. Seien die induzierten
+Abbildungen~$\pi_0(X) \to \pi_0(Y)$ und~$\pi_n(X,x) \to \pi_n(Y,f(x))$ für
+alle~$x \in X_0$ und~$n \geq 1$ bijektiv. Zeige, dass~$f$ eine
+Homotopieäquivalenz ist.
+\end{aufgabe}
+
+\end{document}
