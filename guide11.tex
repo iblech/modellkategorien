@@ -1,4 +1,5 @@
 \documentclass{uebblatt}
+\usepackage{stmaryrd}
 
 \begin{document}
 
@@ -45,7 +46,13 @@ kommutiert. Mit~"`$\mathrm{Ex}^2(X)$"' ist~$\mathrm{Ex}(\mathrm{Ex}(X))$ gemeint
 Verwende bei \textbf{Aufgabe 3} folgendes Lemma (ohne Beweis): Eine
 Kan-Faserung ist genau dann trivial, wenn sie eine schwache Äquivalenz ist.
 Wir wissen auch schon, dass anodyne Erweiterungen schwache Äquivalenzen sind.
-Es ist also nur noch die Rückrichtung zu zeigen.
+Es ist also nur noch die Rückrichtung zu zeigen. Orientiere dich an folgendem
+Muster: Faktorisiere die gegebene Kofaserung~$i$ in eine anodyne Erweiterung~$j$
+(welche sogar eine schwache Äquivalenz ist) gefolgt von einer Kan-Faserung~$p$.
+Mit einem 2-aus-3-Argument kann man zeigen, dass~$p$ eine triviale Faserung
+ist. Nutze dann~$i \boxslash p$, um zu zeigen, dass~$i$ ein Retrakt von~$j$
+ist. Da Retrakte von anodynen Erweiterungen wieder anodyn sind, ist man dann
+fertig.
 
 Beachte bei \textbf{Aufgabe 4}, dass~$\SS^1$ kein Kan-Komplex ist!
 
