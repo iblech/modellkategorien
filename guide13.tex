@@ -1,0 +1,41 @@
+\documentclass{uebblatt}
+
+\newcommand{\Ch}{\mathrm{Ch}}
+
+\begin{document}
+
+\section*{Guide zu Übungsblatt 13}
+
+Bei \textbf{Aufgabe~2} kann man, ohne an Gehalt zu verlieren, auch einfach mit
+simplizialen abelschen Gruppen und Kettenkomplexen von abelschen Gruppen
+statt simplizialen~$R$-Moduln und Kettenkomplexen von~$R$-Moduln arbeiten. Was
+ist eigentlich ein simplizialer~$R$-Modul oder eine simpliziale abelsche
+Gruppe? Das ist nichts anderes als eine gewöhnliche simpliziale Menge~$X$,
+deren Simplexmengen~$X_n$ aber alle die Struktur eines~$R$-Moduls bzw. einer
+simplizialen Menge tragen und sodass die Abbildungen~$X(\varphi) : X_m \to X_n$
+für~$\varphi : [n] \to [m]$ alle~$R$-linear bzw. Gruppenhomomorphismen sind.
+
+Explizit ist der Unterkomplex~$DX_\bullet$ durch
+\[ (DX)_n = \sum_{i=0}^{n-1} \operatorname{im}(X(\sigma^i) : X_{n-1} \to X_n) \]
+gegeben. Dabei ist~$\sigma^i : [n] \to [n-1]$ diejenige eindeutig bestimmte
+monotone Surjektion, die den Wert~$i$ zweimal annimmt. In der Angabe kommt
+auch~$\partial^i$ vor; das ist die eindeutig bestimmte Injektion~$\partial^i$,
+die~$i$ nicht im Bild hat.
+
+Für \textbf{Teilaufgabe~b) von Aufgabe 2} musst du das so genau aber gar nicht
+wissen. Ich verspreche dir, dass~$N(\Delta[n])$ (isomorph zu) einem Komplex
+ist, der in Grad~$n$ einfach durch den freien~$R$-Modul auf der Menge der
+nichtdegenerierten Simplizes von~$\Delta[n]$ gegeben ist. Das ist also der ganz
+gewöhnliche Komplex, wie man ihn in einer Vorlesung über algebraische Topologie
+zur Berechnung der simplizialen Homologie von~$\Delta[n]$ verwendet.
+
+In \textbf{Aufgabe~3} sollen die Ringe~$R$ und~$S$ kommutativ sein.
+
+In \textbf{Aufgabe~4} soll der Wert der Linksableitung des Funktors
+\[ \Ch_{\geq0}(k[x,y]) \longrightarrow \Ch_{\geq0}(k[x,y]),\
+  V_\bullet \longmapsto k[x,y]/(f) \otimes_{k[x,y]} V_\bullet \]
+auf dem Objekt~$k[x,y]/(g)$ (aufgefasst als in Grad~$0$ konzentrierter Komplex)
+bestimmt werden. Quelle und Ziel seien mit der projektiven Modellstruktur
+versehen.
+
+\end{document}
